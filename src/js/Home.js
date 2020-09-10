@@ -5,3 +5,12 @@ function goToNewPage()
         window.location = url;
     }
 }
+
+
+const selectElement = document.querySelector('#books');
+
+selectElement.addEventListener('change', (event) => {
+  alert("sdf sdf dsfsdsds")
+});
+
+
