@@ -1,0 +1,25 @@
+
+#form_crAcc{
+  display:inline-block;
+  text-align:left;
+  border: 5px solid green;
+  padding:30px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+#btn1{
+
+ display:inline-block;
+
+
+}
+
+a {
+	color:rgb(241, 8, 8);
+}
+a:hover{
+	color:rgb(185, 12, 12);
+}
+a:active
+{ color:rgb(107, 5, 5);
+ }
