@@ -3,6 +3,8 @@
 }
 #back{
     background-image:url("../Images/booksaha-1024x656.jpg");
-    background-size: 1600px 800px;
+    background-size: 500px 400px;
     background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: lighten;
 }
