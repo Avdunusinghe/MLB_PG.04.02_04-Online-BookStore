@@ -9,38 +9,46 @@
         <script src="../src/js/Home.js"></script>
     </head>
     <body>     
-      <div class="navbar">
-        <a href="../src/Home.html" class = "logo" ><img src="../src/Images/BuyBooks Logo.png" alt="logo" width="250" height="100"></a>
-        <div style = "position:relative;left:450px;top:50px;">
-          <a href="../src/Home.html">Home</a>
-          <div class="dropdown">
-            <button class="dropbtn">Books
-            </button>
-            <div class="dropdown-content">
-              <a href="../src/Index.html">Information technology</a>
-              <a href="../src/Index.html">Sofwere Engneering</a>
-              <a href="../src/Index.html">Cyber security</a>
-              <a href="../src/Index.html">Networking</a>
-              
-            </div>
-          </div>
-          <a href="../src/Index.html">Magazines</a>
-          <a href="../src/Index.html">Request Books</a>
-          <a href="../src/Aboutus.html">About Us</a>
+      <div id="container">
+        <nav>
+        <div id="adsize">
+          <a href="../src/Home.html" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../src/Images/BuyBooks Logo.png" width="250" height="100"></a>
         </div>
-
-        <a href=""class="loginbtn" style = "position:relative;left:400px;top:-6px;">Sign in|Sign Up</a>
+        
+        <div class ="adhover" style =" position:absolute; left:610px; top:100px;">
+          <ul>
+            <li><a href="../src/Home.html">Home</a></li>
+            <li><a href="#">Books <span>&#9661;</span></a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="#">Information Technology</a></li>
+              <li><a href="#">Software Engeering</a></li>
+              <li><a href="#">Data Sceince</a></li>
+              <li><a href="#">sajith books</a></li>
+				    	<li><a href="#">sasanka books</a></li>
+				    	<li><a href="#">sahan books</a></li>
+				    	<li><a href="#">Harsha Books</a></li>
+            </ul >        
+            </li>
+            <li><a href="#">Magazines</a></li>
+            <li><a href="#">Request books</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+          <a href=""class="loginbtn" style = "float:right; position:relative;left: 0;px;top:-90px;">Sign in|Sign Up</a>
             
 
-        <div class="cart"style = "position:relative;left:400px;top:35px;">
-            <a href="../src/Home.html" class = "cart"><img src="../src/Images/Cart_1.png" alt="cart" width="40" height="40" ></a>
+        <div class="cart"style = "float:right;position:relative;left:200px;top:10px;">
+            <a href="../src/Home.html" class = "cart"><img src="../src/Images/Cart_1.png" alt="cart" width="60" height="50" ></a>
         </div>
   
-        <div class="searchbar"style = "position:relative;left:2px;top:-6px;">
+        <div class="searchbar"style = "float:right;position:relative;left:2px;top:-30px;">
         <input type="text" name = "search" placeholder="Search..">
-        </div>             
-         
-      </div>
+        </div> 
+        </div>
+        
+            
+      </nav>
      
 
          
