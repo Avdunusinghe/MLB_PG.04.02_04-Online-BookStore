@@ -11,20 +11,6 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(246, 244, 250, 0.966);
 }
-
-
-h1 {
-	font-size: 60px;
-	text-align: center;
-	color: #FFF;
-}	
-
-h3 {
-	font-size: 30px;
-	text-align: center;
-	color: #FFF;
-}
-
 h3 a {
 	color: #FFF;
 }
@@ -33,12 +19,6 @@ a {
 	color: #FFF;
 }
 
-h1 {
-	margin-top: 100px;
-	text-align:center;
-	font-size:60px;
-	font-family: 'Bree Serif', 'serif';
-	}
 
 #container {
 	margin: 0 auto;
