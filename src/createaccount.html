@@ -57,26 +57,26 @@
         <center>
         <div id="form_crAcc">
           <form   action="#" target="_self" method="POST" onsubmit="return checkpassword()">
-          <h1>Create an account</h1><br>
-          First name<br><input type="text" id="h_fname" name="h_fname"  placeholder="Enter your first name here" required><br><br><br>
-          Last name<br><input type="text" id="h_lname" name="h_lname" placeholder="Enter your last name here" required><br><br>
-          Gender<br>
-          <input type="radio" id="gender" name="gender" checked>Maile
-          <input type="radio" id="gender" name="gender" >Female
-          <input type="radio" id="gender" name="gender" >Other<br><br>
-          Email<br><input type="email" id="h_emailAdd" name="h_emailAdd"  pattern="[a-zA-Z0-9._%+-]+@[a-z]+\.+[a-z]{2,3}" placeholder="Enter your email here" required><br><br>
-          Contact Number<br><input type="text" id="h_num" name="h_num" pattern="[0-9]{10}" placeholder="Enter your last name here" required><br><br>
+          <h1 id="h_title">Create an account</h1><br>
+          <label>First name</label><br><input type="text" id="h_fname" name="h_fname"  placeholder="Enter your first name here" required><br><br><br>
+          <label>Last name</label><br><input type="text" id="h_lname" name="h_lname" placeholder="Enter your last name here" required><br><br>
+          <label>Gender</label><br>
+          <input type="radio" id="h_gender" name="h_gender" checked>Maile
+          <input type="radio" id="h_gender" name="h_gender" >Female
+          <input type="radio" id="h_gender" name="h_gender" >Other<br><br>
+          <label>Email</label><br><input type="email" id="h_emailAdd" name="h_emailAdd"  pattern="[a-zA-Z0-9._%+-]+@[a-z]+\.+[a-z]{2,3}" placeholder="Enter your email here" required><br><br>
+          <label>Contact Number</label><br><input type="text" id="h_num" name="h_num" pattern="[0-9]{10}" placeholder="Enter your last name here" required><br><br>
         
-          Address<br><textarea  id="h_addr" name="h_addr" rows="6" cols="50" placeholder="Enter your address here" required></textarea><br><br>
-          Password<br><input type="password" id="h_pwd" name="h_pwd" style="width:500px;" placeholder="Enter your password here (between 5-10)" pattern="[a-zA-Z0-9]{5,10}" required><br><br>
+          <label>Address</label><br><textarea  id="h_addr" name="h_addr" rows="6" cols="50" placeholder="Enter your address here" required></textarea><br><br>
+          <label>Password</label><br><input type="password" id="h_pwd" name="h_pwd" style="width:500px;" placeholder="Enter your password here (between 5-10)" pattern="[a-zA-Z0-9]{5,10}" required><br><br>
 
-          RE-enter Password<br><input type="password" id="h_rpwd" name="h_rpwd"style="width:500px;" placeholder="Re-enter your password here" required><br><br>
+          <label>RE-enter Password</label><br><input type="password" id="h_rpwd" name="h_rpwd"style="width:500px;" placeholder="Re-enter your password here" required><br><br>
          <center>
             <a class="acolor1 acolor2 acolor3" href="https://courseweb.sliit.lk/" >ALREADY HAVE AN ACCOUNT</a><br> <br> 
          </center>
             
-            Accept privacy policy terms<input type="checkbox" id="policy" name="policy" required onclick="enableButton()"><br><br>
-            <input type="submit" id="btn1" name="btn1" value="Sign Up"  style="width:500px; height:50px;"  disabled >
+            <input type="checkbox" id="policy" name="policy" required onclick="enableButton()">Accept privacy policy terms<br><br>
+            <input type="submit" id="h_btn1" name="h_btn1" value="Sign Up"  disabled >
         
           </form>
           </div>

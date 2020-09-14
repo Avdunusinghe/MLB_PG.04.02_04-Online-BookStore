@@ -1,7 +1,7 @@
 
 function checkpassword(){
 	
-	if(document.getElementById("pwd").value != document.getElementById("rpwd").value){
+	if(document.getElementById("h_pwd").value != document.getElementById("h_rpwd").value){
 		
 		alert("Password are mismatched!!");
 		return false;
@@ -17,11 +17,12 @@ function checkpassword(){
 function  enableButton(){
 	
 	if(document.getElementById("policy").checked){
-	     document.getElementById("btn1").disabled= false;
+	     document.getElementById("h_btn1").disabled= false;
 	}
 	else{
 		
-	     document.getElementById("btn1").disabled= true;
+	     document.getElementById("h_btn1").disabled= true;
 	}
-}	
+}
+	
 
