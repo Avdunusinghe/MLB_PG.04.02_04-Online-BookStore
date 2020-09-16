@@ -53,7 +53,7 @@ nav a {
 	display:block;
 	padding:0 10px;
 	color:#FFF;
-	font-size:20px;
+	font-size:17px;
 	line-height: 60px;
 	text-decoration:none;
 }
@@ -91,12 +91,54 @@ nav ul ul ul li {
 	top:-60px; 
 	left:170px;
 }
+.searchbar{
+	display: flex;
+	border: 2px solid red;
+	padding: 10px;
+	border-radius: 50px 20px;
+
+}
+.searchbar input {
+	display: flex;
+	border: 2px solid red;
+	
+	padding: 10px;
+	border-radius: 50px 20px;
+	color:white;
+	background-color: black;
+	
+}
+.searchbar hover  {
+	
+	
+}
+
+
+.adsearchbutton{
+	width: 5;
+	border: none;
+	background-color: rgb(49, 49, 49);
+	color:white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	display: flex;
+	
+	
+}
 
 
 	
 /* Change this in order to change the Dropdown symbol */
 /*li > a:after { content:  ' '; }
 li > a:only-child:after { content: ''; }*/
+
+
+
+
 
 
 
