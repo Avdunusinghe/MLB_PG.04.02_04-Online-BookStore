@@ -6,6 +6,7 @@
         <title>Buybooks</title>
         <link rel="stylesheet" href="../src/Styles/style.css">
         <link rel="stylesheet" href="../src/Styles/slideShow.css">
+        <link rel="stylesheet" href="../src/Styles/contactus.css">
         <script src="../src/js/Home.js"></script>
     </head>
     <body>     
@@ -50,19 +51,21 @@
             
       </nav>
       <!----------------------End of header section--------------------------------->
-
+<center>
       <h2>Contact Us</h2>
-      <center>
-      <div id="contactus_s">      
+      
+      <div class="contactus_s">      
       <form   action="#" target="_self" method="POST" onsubmit=>
       Name<br><input type="text" id="name_s" name="name_s" ; placeholder="Enter your name here" required><br><br>
-      Contact Number<br><input type="text" id="cnum_s" name="cnum_s" pattern="[0-9]{10}" placeholder="Enter your last name here" required><br><br>
+      Contact Number<br><input type="text" id="cnum_s" name="cnum_s" pattern="[0-9]{10}" placeholder="Enter contact number here" required><br><br>
       Email<br><input type="email" id="emailAdd" name="emailAdd" pattern="[a-zA-Z0-9._%+-]+@[a-z]+\.+[a-z]{2,3}" placeholder="Enter your email here" required><br><br>
-      Message<br><input type="text" >
-    </center>
+      Message<br><input type="text" id="mess" ><br><br>
+      <input type="Submit" id="snSubmit" value="Submit">
     </form>  
     
       </div>
+</center>
+
       <!--------------------------Footer below--------------------------------------> 
         <div class="footer">
             <div class="container">
