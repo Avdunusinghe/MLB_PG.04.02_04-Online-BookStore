@@ -2,7 +2,13 @@
     display:inline-block;
     text-align: left;
 }
-a{
+.adlgbtn a{
     text-decoration: none;
-    color: black;
+    color:whitesmoke;
+    background-color: black;
+    padding: 1em 1.5em;
+
+}
+.adlgbtn a:hover{
+    background-color: #434542;
 }
