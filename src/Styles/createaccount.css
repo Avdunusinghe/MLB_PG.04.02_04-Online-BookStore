@@ -1,14 +1,20 @@
 
 #form_crAcc{
   
-  background-image: url("../Images/4ND1Qn.jpg");
-  background-size: 600px 1150px;
+  
+  
   display:inline-block;
   text-align:left;
-  border: 1px solid black;
+ 
   padding:30px;
   margin-top:10px;
   margin-bottom:10px;
+}
+#backgraundimage{
+  background-image: url("../Images/book\ background.jpg");
+  background-size: 1600px 1200px;
+  padding: 20px;
+
 }
 
 #h_title{
