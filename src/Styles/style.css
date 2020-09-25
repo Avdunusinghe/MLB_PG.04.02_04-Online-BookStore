@@ -109,10 +109,10 @@ nav ul ul ul li {
 	background-color: black;
 	
 }
-.searchbar hover  {
+/*.searchbar hover  {
+
 	
-	
-}
+}*/
 
 
 .adsearchbutton{
@@ -158,7 +158,7 @@ li > a:only-child:after { content: ''; }*/
   padding-right: 25px;
 }
 
-.row{
+.row-ft{
   display: flex;
   align-items: center;
 }
