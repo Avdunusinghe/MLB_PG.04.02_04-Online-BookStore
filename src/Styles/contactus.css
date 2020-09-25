@@ -1,7 +1,20 @@
-#contactus_s{
+.contactus_s{
     display:inline-block;
-    text-align:left;    
+    text-align:left;   
+    
 }
 #name_s{
-    border-radius: 10px;
+    border-radius: 5px;
+    width: 500px;
+    
+}
+#cnum_s{
+    border-radius: 5px;
+    width: 500px;
+}
+#emailAdd{
+    border-radius: 5px;
+}
+#mess{
+    border-radius: 5px;
 }

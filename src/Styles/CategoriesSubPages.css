@@ -1,0 +1,31 @@
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.col-5{
+    margin: auto;
+    margin-top: 0;
+}
+
+.col-5 .box img{
+    max-width: 178px;
+    max-height: 263px;
+    padding: 2px;
+    position: absolute;
+}
+
+.box{
+    background: white;
+    width: 180px;
+    height: 265px;
+    border: 1.2px solid #a8a6a6;
+    align-items: center;
+}
+.box:hover{
+    border: 1.2px solid #ea0000;
+}

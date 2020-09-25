@@ -6,7 +6,7 @@
         <title>Buybooks</title>
         <link rel="stylesheet" href="../src/Styles/style.css">
         <link rel="stylesheet" href="../src/Styles/slideShow.css">
-        <link rel="stylesheet" href="../src/Styles/contactus.css">
+        <link rel="stylesheet" href="../src/Styles/loginpage.css">
         <script src="../src/js/Home.js"></script>
     </head>
     <body>     
@@ -19,14 +19,14 @@
         <div class ="adhover" style =" position:absolute; left:610px; top:100px;">
           <ul>
             <li><a href="../src/Home.html">Home</a></li>
-            <li><a href="#">Books<span>&#9661;</span></a>
+            <li><a href="#">Books <span>&#9661;</span></a>
             <!-- First Tier Drop Down -->
             <ul>
               <li><a href="#">Information Technology</a></li>
               <li><a href="#">Software Engineering</a></li>
               <li><a href="#">Machine Learning</a></li>
               <li><a href="#">Enterprise Application Development</a></li>
-				    	<li><a href="#">Mobile Application Design & Development</a></li>
+				    	<li><a href="#">Mobile Appli cation Design & Development</a></li>
 				    	<li><a href="#">Deep Learning</a></li>
 				    	<li><a href="#">Parallel Computing</a></li>
             </ul >        
@@ -43,30 +43,53 @@
             <a href="../src/Home.html" class = "cart"><img src="../src/Images/Cart_1.png" alt="cart" width="60" height="50" ></a>
         </div>
   
-        <div class="searchbar"style = "float:right;position:relative;left:2px;top:-30px;">
+        <div class="searchbar"style = "float:right;position:relative;left:2px;top:-60px;">
         <input type="text" name = "search" placeholder="Search..">
-        </div> 
+        <button type="submit" class="adsearchbutton" id="adsearchbtn">Search</button>
+      </div>
+         
+         
         </div>
         
             
       </nav>
-      <!----------------------End of header section--------------------------------->
-<center>
-      <h2>Contact Us</h2>
-      
-      <div class="contactus_s">      
-      <form   action="#" target="_self" method="POST" onsubmit=>
-      Name<br><input type="text" id="name_s" name="name_s" ; placeholder="Enter your name here" required><br><br>
-      Contact Number<br><input type="text" id="cnum_s" name="cnum_s" pattern="[0-9]{10}" placeholder="Enter contact number here" required><br><br>
-      Email<br><input type="email" id="emailAdd" name="emailAdd" pattern="[a-zA-Z0-9._%+-]+@[a-z]+\.+[a-z]{2,3}" placeholder="Enter your email here" required><br><br>
-      Message<br><input type="text" id="mess" ><br><br>
-      <input type="Submit" id="snSubmit" value="Submit">
-    </form>  
-    
-      </div>
-</center>
 
-      <!--------------------------Footer below--------------------------------------> 
+     <center> 
+    <div class="adloinbox">
+        <h1>User Login</h1>
+        <from  class="adloinbox">
+          <div class="adtextbox">
+              <leble>Email or User Name</leble> <br><br>
+              <input type="text"  placeholder="Email or User Name" name="" value=""> <br> <br>
+          </div>
+          <div class="adtextbox">
+              <lebel>Password</lebel><br><br>
+              <input type="text" placeholder="Password" name="" value=""><br><br>
+          </div> 
+          <div class="adlgbtn">
+            <input class="adbtn" type="button" name="" value="Login"><br><br>
+            <a href="../src/createaccount.html">Sign Up</a>
+          </div>
+         
+          
+        </from>
+    </div>
+    </center> 
+
+     
+
+
+
+
+
+
+
+
+
+
+
+      
+        <!--------------------------Footer below--------------------------------------> 
         <div class="footer">
             <div class="container">
               <div class="row-ft">
