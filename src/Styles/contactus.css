@@ -1,20 +1,42 @@
+.contactus1_s{
+background-image: url("../Images/book\ background.jpg");
+background-size:cover;
+padding: 133px;
+}
+
+
 .contactus_s{
+ 
     display:inline-block;
-    text-align:left;   
-    
+    text-align:left; 
+     
+
 }
-#name_s{
-    border-radius: 5px;
+#cdesign_s{
+    margin-top: 5px;
+    border-radius: 0px;
     width: 500px;
-    
+    height: 30px;
 }
-#cnum_s{
-    border-radius: 5px;
+
+#msdesign_s{
+    margin-top: 5px;
+    border: 2px solid;
+    border-radius: 0px;
     width: 500px;
+    height: 75px;  
 }
-#emailAdd{
-    border-radius: 5px;
-}
-#mess{
-    border-radius: 5px;
+
+#submit_s{
+    margin-top: 5px;
+    background-color: black;
+    color:white;
+    width: 100px;
+    height: 25px;
+}   
+
+form label{
+    font-size:16px;
+    font-weight: bold;
+    font-family:  Calibri ;
 }
