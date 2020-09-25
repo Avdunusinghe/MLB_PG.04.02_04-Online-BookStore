@@ -1,47 +1,53 @@
 
 #form_crAcc{
+  
   background-image: url("../Images/4ND1Qn.jpg");
-  background-size: 1000px 1200px;
+  background-size: 600px 1150px;
   display:inline-block;
   text-align:left;
-  border: 1px solid rgb(0, 113, 128);
+  border: 1px solid black;
   padding:30px;
   margin-top:10px;
   margin-bottom:10px;
 }
+
 #h_title{
-  font-family:Calibri;
-}
+  
+   font-family:Calibri;
+
+  }
 
 
 .acolor1 {
-	color:rgb(241, 8, 8);
+	  color:rgb(241, 8, 8);
 }
 .acolor2:hover{
-	color:rgb(185, 12, 12);
+	  color:rgb(185, 12, 12);
 }
-.acolor3:active
-{ color:rgb(107, 5, 5);
- }
+.acolor3:active{ 
+    color:rgb(107, 5, 5);
+}
 
  #h_fname {
-  border-radius: 10px;
+  
   width:500px;
   height:50px ;
   background:rgb(235, 231, 226);
   margin-top: 5px;
   font-size: 16px;
- }
+ 
+}
  #h_lname {
-  border-radius: 10px;
+ 
   width:500px;
   height:50px ;
   background:rgb(235, 231, 226);
   margin-top: 5px;
   font-size: 16px;
- }
+ 
+}
  #h_emailAdd{
-  border-radius: 10px;
+  
   width:500px;
   height:50px ;
   background:rgb(235, 231, 226);
@@ -49,18 +55,21 @@
   font-size: 16px;
 }
 #h_gender{
+
   margin-top: 5px;
+
 }
 #h_num{
-  border-radius: 10px;
+ 
   width:500px;
   height:50px ;
   background:rgb(235, 231, 226);
   margin-top: 5px;
   font-size: 16px;
+
 }
 #h_addr{
-  border-radius: 10px;
+ 
   border: 2px solid;
   width:500px;
   height:120px ;
@@ -70,7 +79,7 @@
 }
 #h_pwd
 {
-  border-radius: 10px;
+  
   width:500px;
   height:50px ;
   background:rgb(235, 231, 226);
@@ -79,7 +88,7 @@
 }
 #h_rpwd
 {
-  border-radius: 10px;
+  
   width:500px;
   height:50px ;
   background:rgb(235, 231, 226);
@@ -87,10 +96,11 @@
   font-size: 16px;
 }
 #h_btn1{
-  background-color: rgba(0, 128, 128, 0.534);
+
+  background-color: black;
   color: antiquewhite;
-  padding: 15px 40px;
-  border-radius: 25px;
+  padding: 13px 220px;
+  border-radius: 2px;
   transition: 0.5s;
   font-size: 16px;
   margin-top: 5px;
@@ -100,12 +110,15 @@
 
 
 #h_btn1:hover{
-  background-color:rgb(17, 99, 99) ;
+
+  background-color:rgb(43, 45, 42) ;
   cursor: pointer;
   
 }
 form label{
+ 
   font-size:l6px ;
   font-weight: bold;
   font-family:Calibri ;
+
 }
