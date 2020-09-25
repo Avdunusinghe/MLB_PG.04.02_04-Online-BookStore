@@ -1,12 +1,4 @@
-/*body {
-	background: #faf9f9;
-	font-size:22px;
-	line-height: 32px;
-	color: #ffffff;
-	word-wrap:break-word !important;
-	font-family: 'Open Sans', sans-serif;
-	}*/
-	body {
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
    	background-color: rgba(246, 244, 250, 0.966);
@@ -92,50 +84,35 @@ nav ul ul ul li {
 	top:-60px; 
 	left:170px;
 }
-.searchbar{
-	display: flex;
-	border: 2px solid red;
-	padding: 10px;
-	border-radius: 50px 20px;
-
+.searchbar input[type=text]{
+	width:100px;
+	height: 30px;
+	background-color: rgb(42, 39, 39);
+	box-sizing: border-box;
+ 	border: 2px solid black;
+ 	border-radius: 4px;
+	-webkit-transition:width.35s ease-in-out;
+	transition: width.35s ease-in-out;
+	background-image: url(../Images/IMG_SreachIcon.png);
+	background-repeat: no-repeat;
+	background-size:28px;
+	padding: 12px 20px 12px 40px;
+	background-position: right; 
 }
-.searchbar input {
-	display: flex;
-	border: 2px solid red;
-	
-	padding: 10px;
-	border-radius: 50px 20px;
-	color:white;
-	background-color: black;
-	
-}
-/*.searchbar hover  {
-
-	
-}*/
-
-
-.adsearchbutton{
-	width: 5;
-	border: none;
-	background-color: rgb(49, 49, 49);
-	color:white;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	display: flex;
-	
-	
+.searchbar input[type=text]:focus{
+	width: 250px;
 }
 
 
+
+
+
 	
-/* Change this in order to change the Dropdown symbol */
-/*li > a:after { content:  ' '; }
-li > a:only-child:after { content: ''; }*/
+	
+
+
+
+	
 
 
 
