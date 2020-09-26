@@ -25,7 +25,20 @@
     height: 265px;
     border: 1.2px solid #a8a6a6;
     align-items: center;
+    transition: 0.4s;
 }
 .box:hover{
     border: 1.2px solid #ea0000;
+    transform: translateY(-5px);
+}
+
+.col-5 a p{
+    text-align: inherit;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.col-5 a{
+    color: darkslateblue;
+    text-decoration: none;
 }
