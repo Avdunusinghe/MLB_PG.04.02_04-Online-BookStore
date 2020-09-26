@@ -1,0 +1,17 @@
+.sprqbook{
+    display:inline-block;
+    text-align: left;
+}
+
+.spsubmitbtn{
+    text-decoration: none;
+    color:whitesmoke;
+    background-color: black;
+    padding: 8px 40px;
+    font-size: medium;
+    font-weight: 100;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+.spsubmitbtn a:hover{
+    background-color: #434542;
+}

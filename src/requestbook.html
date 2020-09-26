@@ -7,9 +7,9 @@
         <title>Buybooks</title>
 
         <link rel="stylesheet" href="../src/Styles/style.css">
-        <link rel="styleshhet" href="../src/Styles/CategoriesSubPages.css">
+        <link rel="stylesheet" href="../src/Styles/requestbook.css">
 
-         
+        <script src="../src/js/requestbook.js"></script> 
     </head>
     <body>     
       <div id="container">
@@ -59,127 +59,39 @@
           </div>
         </nav>
 
-      <!-----------------------------------End of header section---------------------------------------->
 
-      <!-----------Row one------------>
-    <div class="row">
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book1.jpg"></a>
-            </div>
-            <a href="#"><p>BName 1</p></a>
-            <a href="#">Price</a>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book2.jpg"></a>
-            </div>
-            <a href="#"><p>BName 1</p></a>
-            <a href="#">Price</a>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book3.jpeg"></a>
-            </div>
-            <a href="#"><p>BName 1</p></a>
-            <a href="#">Price</a>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book4.jpg"></a>
-            </div>
-            <a href="#"><p>BName 1</p></a>
-            <a href="#">Price</a>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book5.jpg"></a>
-            </div>
-            <a href="#"><p>BName 1</p></a>
-            <a href="#">Price</a>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book6.jpg"></a>
-            </div>
-            <a href="#"><p>BName 1</p></a>
-            <a href="#">Price</a>
-        </div>
-    </div>
 
-    <!-----------Row two------------>
-    <div class="row">
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book1.jpg"></a>
-            </div>
-            <p>Iranama</p>
-            <h4>Add to cart</h4>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book2.jpg"></a>
-            </div>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book3.jpeg"></a>
-            </div>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book4.jpg"></a>
-            </div>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book5.jpg"></a>
-            </div>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book6.jpg"></a>
-            </div>
-        </div>
-    </div>
+      <!--end of header-->
+      <center>
+          <h1>Request Books</h1>
+          <div class="sprqbook">
+             <form action ="" target="_self" method="POST" >
+                  <lebal>Your name</lebal><br><br>
+                  <input type="text" placeholder="Enter your name"style="width: 470px;height:40px;"id="spname" ><br><br>
 
-    <!-----------Row three------------>
-    <div class="row">
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book1.jpg"></a>
-            </div>
-            <p>Iranama</p>
-            <h4>Add to cart</h4>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book2.jpg"></a>
-            </div>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book3.jpeg"></a>
-            </div>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book4.jpg"></a>
-            </div>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book5.jpg"></a>
-            </div>
-        </div>
-        <div class="col-5">
-            <div class="box">
-                <a href="#"><img src="../src/Images/book6.jpg"></a>
-            </div>
-        </div>
-    </div>
+                  <label>Contact Number</label><br><br>
+                  <input type="text" placeholder="Enter your Contact Number" style="width: 470px;height:40px;" id="sppnum"><br><br>
 
-        <!--------------------------Footer below--------------------------------------> 
+                  <label>Email</label><br><br>
+                  <input type="text" placeholder="Enter your Email"style="width: 470px;height:40px;"id="spemail"><br><br>
+
+                  <lebel>Books You are Looking for</lebel><br><br>
+                  <textarea style="width: 470px;height:40px;"id="spbdetails"></textarea><br><br>
+
+                  
+                  <input class="spsubmitbtn" type="button" name="" id="submit" value="Submit" onclick="validatRequestBookDetail()"><br><br>                    
+
+            </form>
+          </div>
+      </center>
+
+
+
+
+
+
+
+       <!--------------------------Footer below--------------------------------------> 
        <div class="footer">
         <div class="container">
           <div class="row-ft">
