@@ -153,12 +153,21 @@ nav ul ul li {
 
 
 
+/*--------------common body styles------------------------*/
 
+.pages-journey{
+  text-align: left;
+  color: darkslategray;
+  font-style: bold;
+  margin-left: 30px;
+}
 
-	
-	
-
-
+.pages-category-title{
+  color: #434542;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+}
 
 	
 
