@@ -1,4 +1,4 @@
-function validatelogin(){
+function validateLogin(){
 
     //asign value 
     var username = document.getElementById("adusername").value; 
