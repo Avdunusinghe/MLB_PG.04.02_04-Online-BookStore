@@ -1,15 +1,14 @@
 function validateLogin(){
 
     //asign value 
-    var username = document.getElementById("dusernaame").value; 
+    var username = document.getElementById("adusername").value; 
     var password = document.getElementById("adpassword").value;
-
     var emailValidation  = document.getElementById("lblUsernameValidator");
-
+    console.log(username);
     //check user name not null
     if(username == null || username =="" || ValidateEmail(username)==false){   
 
-        alert("Please enter your username");
+       // alert("Please enter your username");
 
         emailValidation.style.display = "block";
     }
@@ -21,17 +20,17 @@ function validateLogin(){
     if(password == null || password == ""){
 
         alert("Please enter the password");
-        return fales;
+        //return fales;
     }
-    else{
+   /* else{
         alert('Login Succesfull');
-    }
+    }*/
     
 }
 
 function ValidateEmail(mail) 
 {
- if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail))
+ if (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(mail))
   {
     return (true)
   }
