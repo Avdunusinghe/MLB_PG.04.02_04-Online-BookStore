@@ -108,7 +108,7 @@
 #h_btn1{
 
   background-color: black;
-  color: antiquewhite;
+  color: white;
   padding: 13px 220px;
   border-radius: 2px;
   transition: 0.5s;
@@ -134,7 +134,7 @@ form label{
 }
 #h_btn2{
   background-color: black;
-  color: antiquewhite;
+  color: white;
   padding: 13px 217px;
   border-radius: 2px;
   transition: 0.5s;
