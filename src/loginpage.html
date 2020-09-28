@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../src/Styles/loginpage.css">
 
         <script src="../src/js/login.js"></script> 
+        
     </head>
     <body>     
       <div id="container">
@@ -67,6 +68,9 @@
                   <div class="adtextbox">
                        <leble>User Name</leble> <br><br>
                        <input type="text"  placeholder="Email or User Name" id="adusername" name="" value="" style="width: 470px;height:40px;"  > <br> <br>
+                       <div style="display:none" id="lblUsernameValidator">
+                         <label id="lblEmailValidation" style="color: red;">Invalid email format</label>
+                       </div>
                    </div>
 
                   <div class="adtextbox">
@@ -78,7 +82,7 @@
                    </div> 
 
                   <div class="adlgbtn">
-                      <input class="adlgbtn1" type="button" name="" id="submit" value="Login" onclick="validatelogin()"><br><br>
+                      <input class="adlgbtn1" type="button" name="" id="submit" value="Login" onclick="validateLogin()"><br><br>
                      <a href="../src/createaccount.html">Sign Up</a>
                   </div>
                     <br><br>

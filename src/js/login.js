@@ -1,14 +1,21 @@
-function validatelogin(){
+function validateLogin(){
 
     //asign value 
-    var username = document.getElementById("adusername").value; 
+    var username = document.getElementById("dusernaame").value; 
     var password = document.getElementById("adpassword").value;
 
+    var emailValidation  = document.getElementById("lblUsernameValidator");
+
     //check user name not null
-    if(username == null || username ==""){   
+    if(username == null || username =="" || ValidateEmail(username)==false){   
 
         alert("Please enter your username");
-        return false;
+
+        emailValidation.style.display = "block";
+    }
+    else
+    {
+        emailValidation.style.display = "none";
     }
     //chack password not null
     if(password == null || password == ""){
@@ -20,6 +27,15 @@ function validatelogin(){
         alert('Login Succesfull');
     }
     
+}
+
+function ValidateEmail(mail) 
+{
+ if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail))
+  {
+    return (true)
+  }
+    return (false)
 }
 
 // show password checkbox 
