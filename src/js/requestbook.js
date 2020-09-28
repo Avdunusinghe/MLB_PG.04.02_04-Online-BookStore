@@ -1,11 +1,11 @@
 function validatRequestBookDetail() {
 
-    var yrname = document.getElementById("spname").Value;
-    var pnum = document.getElementById("sppnum").Value;
-    var email = document.getElementById("spemail").Value;
-    var bookDetails = document.getElementById("spbdetails").Value;
+    var yrname = document.getElementById("spname").value;
+    var pnum = document.getElementById("sppnum").value;
+    var email = document.getElementById("spemail").value;
+    var bookDetails = document.getElementById("spbdetails").value;
 
-    
+    console.log(yrname);
 
     if (yrname == null || yrname == "") {
 

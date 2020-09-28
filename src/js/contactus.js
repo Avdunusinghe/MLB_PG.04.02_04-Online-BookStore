@@ -1,8 +1,8 @@
 function validateContactUsDetails(){
-    var sname = document.getElementById("snName").Value;
-    var cnumber = document.getElementById("snCnumber").Value;
-    var email = document.getElementById("snEmail").Value;
-    var message = document.getElementById("snMsg").Value;
+    var sname = document.getElementById("snName").value;
+    var cnumber = document.getElementById("snCnumber").value;
+    var email = document.getElementById("snEmail").value;
+    var message = document.getElementById("snMsg").value;
 
     if(sname == null || sname == ""){
         alert("Enter your name");
