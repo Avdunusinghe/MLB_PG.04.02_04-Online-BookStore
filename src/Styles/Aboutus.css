@@ -2,9 +2,9 @@
     color:rgb(126, 4, 4);
 }
 #back{
-    background-image:url("../Images/booksaha-1024x656.jpg");
-    background-size: 500px 400px;
+    background-image:url("../Images/book\ background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: lighten;
+    
 }
