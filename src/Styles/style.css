@@ -1,12 +1,4 @@
-/*body {
-	background: #faf9f9;
-	font-size:22px;
-	line-height: 32px;
-	color: #ffffff;
-	word-wrap:break-word !important;
-	font-family: 'Open Sans', sans-serif;
-	}*/
-	body {
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
    	background-color: rgba(246, 244, 250, 0.966);
@@ -34,7 +26,7 @@ nav {
 	 margin:0;
 	/* margin: auto;*/
 	padding: 100px;
-	background-color: #0e0d0d;
+	background-color: black;
 	
 }
 
@@ -87,55 +79,97 @@ nav ul ul li {
 }
 
 /* Second, Third and more Tiers	*/
-nav ul ul ul li {
+/*nav ul ul ul li {
 	position: relative;
 	top:-60px; 
 	left:170px;
+}*/
+/*.searchbar input[type=text]{
+	width:100px;
+	height: 30px;
+	background-color: rgb(42, 39, 39);
+	box-sizing: border-box;
+	border: 2px solid black;
+ 	border-radius: 4px;
+	-webkit-transition:width.35s ease-in-out;
+	transition: width.35s ease-in-out;
+	background-image: url(../Images/IMG_SreachIcon.png);
+	background-repeat: no-repeat;
+	background-size:20px;
+	/*padding: 12px 20px 12px 50px;*/
+	/*background-position: right 5px ;
 }
-.searchbar{
-	display: flex;
-	border: 2px solid red;
-	padding: 10px;
-	border-radius: 50px 20px;
-
-}
-.searchbar input {
-	display: flex;
-	border: 2px solid red;
-	
-	padding: 10px;
-	border-radius: 50px 20px;
-	color:white;
-	background-color: black;
-	
-}
-/*.searchbar hover  {
-
-	
+.searchbar input[type=text]:focus{
+	width: 250px;
 }*/
 
 
-.adsearchbutton{
-	width: 5;
-	border: none;
-	background-color: rgb(49, 49, 49);
-	color:white;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	display: flex;
-	
-	
+
+
+
+.adsearchBox:hover > .adsearchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.adsearchBox:hover > .adsearchButton {
+  background:black;
+  color :white;
+}
+
+.adsearchButton {
+    color: white;
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #1d1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 50s;
+}
+
+.adsearchInput {
+    border:none;
+    background:rgb(35, 35, 35);
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.adsearchBox:hover > .adsearchInput {
+    width: 100px;
+   	padding: 0 6px;
+}
 }
 
 
+
+/*--------------common body styles------------------------*/
+
+.pages-journey{
+  text-align: left;
+  color: darkslategray;
+  font-style: bold;
+  margin-left: 30px;
+}
+
+.pages-category-title{
+  color: #434542;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+}
+
 	
-/* Change this in order to change the Dropdown symbol */
-/*li > a:after { content:  ' '; }
-li > a:only-child:after { content: ''; }*/
 
 
 

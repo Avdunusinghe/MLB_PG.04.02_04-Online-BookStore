@@ -12,14 +12,14 @@ padding: 133px;
      
 
 }
-#cdesign_s{
+.cdesign_s{
     margin-top: 5px;
     border-radius: 0px;
     width: 500px;
     height: 40px;
 }
 
-#msdesign_s{
+.msdesign_s{
     margin-top: 5px;
     border: 2px solid;
     border-radius: 0px;
@@ -27,7 +27,7 @@ padding: 133px;
     height: 75px;  
 }
 
-#submit_s{
+.submit_s{
     margin-top: 5px;
     background-color: black;
     color:white;

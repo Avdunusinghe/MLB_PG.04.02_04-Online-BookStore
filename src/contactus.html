@@ -3,53 +3,65 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
+
         <title>Buybooks</title>
+
         <link rel="stylesheet" href="../src/Styles/style.css">
         <link rel="stylesheet" href="../src/Styles/slideShow.css">
         <link rel="stylesheet" href="../src/Styles/contactus.css">
-        <script src="../src/js/Home.js"></script>
+
+        
+        <script src="../src/js/contactus.js"></script>
     </head>
     <body>     
       <div id="container">
         <nav>
-        <div id="adsize">
-          <a href="../src/Home.html" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../src/Images/BuyBooks Logo.png" width="250" height="100"></a>
-        </div>
+          <div id="adsize">
+            <a href="../src/Home.html" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../src/Images/BuyBooks Logo.png" width="250" height="100"></a>
+          </div>
         
-        <div class ="adhover" style =" position:absolute; left:610px; top:100px;">
-          <ul>
-            <li><a href="../src/Home.html">Home</a></li>
-            <li><a href="#">Books<span>&#9661;</span></a>
-            <!-- First Tier Drop Down -->
-            <ul>
-              <li><a href="#">Information Technology</a></li>
-              <li><a href="#">Software Engineering</a></li>
-              <li><a href="#">Machine Learning</a></li>
-              <li><a href="#">Enterprise Application Development</a></li>
-				    	<li><a href="#">Mobile Application Design & Development</a></li>
-				    	<li><a href="#">Deep Learning</a></li>
-				    	<li><a href="#">Parallel Computing</a></li>
-            </ul >        
-            </li>
-            <li><a href="#">Magazines</a></li>
-            <li><a href="#">Request books</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </div>
-          <a href=""class="loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in|Sign Up</a>
+            <div class ="adhover" style =" position:absolute; left:610px; top:100px;">
+              <ul>
+                  <li><a href="../src/Home.html">Home</a></li>
+                  <li><a href="#">Books <span>&#9661;</span></a>
+                  <!-- First Tier Drop Down -->
+                <ul>
+                  <li><a href="#">Information Technology</a></li>
+                  <li><a href="#">Software Engineering</a></li>
+                  <li><a href="#">Machine Learning</a></li>
+                  <li><a href="#">Enterprise Application Development</a></li>
+                  <li><a href="#">Mobile Application Design & Development</a></li>
+                  <li><a href="#">Deep Learning</a></li>
+                  <li><a href="#">Parallel Computing</a></li>
+                </ul >        
+                </li>
+                  <li><a href="../src/magazines.html">Magazines</a></li>
+                  <li><a href="../src/requestbook.html">Request books</a></li>
+                  <li><a href="../src/Aboutus.html">About Us</a></li>
+              </ul>
+            </div>
+
+
+              <a href="../src/loginpage.html"class="loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in |</a>
+              <a href="../src/createaccount.html"class="adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>
             
 
-        <div class="cart"style = "float:right;position:relative;left:200px;top:10px;">
-            <a href="../src/Home.html" class = "cart"><img src="../src/Images/Cart_1.png" alt="cart" width="60" height="50" ></a>
-        </div>
+            <div class="cart"style = "float:right;position:relative;left:200px;top:-3px;">
+                <a href="../src/Home.html" class = "cart"><img src="../src/Images/Cart_1.png" alt="cart" width="35" height="40" style="color: white;"></a>
+               
+            </div>
   
-        <div class="searchbar"style = "float:right;position:relative;left:2px;top:-30px;">
-        <input type="text" name = "search" placeholder="Search..">
-        </div> 
-        </div>
-        
-            
-      </nav>
+           <div style = "float:right;position:relative;left:-70px;top:-90px;">
+                  <div class="adsearchBox">
+                    <input class="adsearchInput"type="text" name="" placeholder="Search">
+                      <button class="adsearchButton" href="#">
+                            search
+                      </button>
+                  </div>  
+          </div>
+        </nav>
+         
+      </div>
       <!----------------------End of header section--------------------------------->
       <div class="contactus1_s"> 
       <center>
@@ -58,11 +70,19 @@
         <div class="contactus_s"> 
           
         <form   action="#" target="_self" method="POST" onsubmit=>
-          <label>Name</label><br><input type="text" id="cdesign_s" name="cdesign_s" ; placeholder="Enter your name here" required><br><br>
-          <label>Contact Number</label><br><input type="text" id="cdesign_s" name="cdesign_s" pattern="[0-9]{10}" placeholder="Enter your contact number here" required><br><br>
-          <label>Email</label><br><input type="email" id="cdesign_s" name="cdesign_s" pattern="[a-zA-Z0-9._%+-]+@[a-z]+\.+[a-z]{2,3}" placeholder="Enter your email here" required><br><br>
-          <label>Message</label><br><textarea input type="text" id="msdesign_s" name="msdesign_s" rows="5" columns="25"></textarea><br><br>
-          <input type="Submit" id="submit_s" name = "submit_s" value="Submit">
+          <label>Name</label><br>
+          <input type="text" class="cdesign_s" id="snName" name="cdesign_s" ; placeholder="Enter your name here" required><br><br>
+
+          <label>Contact Number</label><br>
+          <input type="text" class="cdesign_s" name="cdesign_s" id="snCnumber" pattern="[0-9]{10}" placeholder="Enter your contact number here" required><br><br>
+
+          <label>Email</label><br>
+          <input type="email" class="cdesign_s" name="cdesign_s" id="snEmail" pattern="[a-zA-Z0-9._%+-]+@[a-z]+\.+[a-z]{2,3}" placeholder="Enter your email here" required><br><br>
+
+          <label>Message</label><br>
+          <textarea input type="text" class="msdesign_s" name="msdesign_s" id="snMsg" rows="5" columns="25"></textarea><br><br>
+
+          <input type="Submit" class="submit_s" name = "submit_s" value="Submit" onclick="validateContactUsDetails()">
         </form>  
     
       </div>

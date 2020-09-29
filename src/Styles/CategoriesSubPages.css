@@ -1,4 +1,4 @@
-.row{
+.sc-row{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -7,25 +7,39 @@
     margin-top: 40px;
 }
 
-.col-5{
+.sc-col-5{
     margin: auto;
     margin-top: 0;
 }
 
-.col-5 .box img{
+.sc-col-5 .sc-box img{
     max-width: 178px;
     max-height: 263px;
     padding: 2px;
     position: absolute;
 }
 
-.box{
+.sc-box{
     background: white;
     width: 180px;
     height: 265px;
     border: 1.2px solid #a8a6a6;
     align-items: center;
+    transition: 0.4s;
 }
-.box:hover{
+.sc-box:hover{
     border: 1.2px solid #ea0000;
+    transform: translateY(-5px);
 }
+
+.sc-col-5 a p{
+    text-align: inherit;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.sc-col-5 a{
+    color: darkslateblue;
+    text-decoration: none;
+}
+

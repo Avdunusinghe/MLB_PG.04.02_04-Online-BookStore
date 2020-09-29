@@ -12,19 +12,19 @@
     color: rgb(46, 46, 46);
 }
 
-.p1{
+.pp-p1{
     color: rgb(0, 0, 0);
     font-style: italic;
     margin: 25px 0 30px 0;
 }
 
-.sub-topic{
+.pp-sub-topic{
     font-size: 30px;
     color: rgb(82, 82, 82);
     padding-top: 30px;
 }
 
-ul{
+.ppul{
     list-style: circle;
 }
 
