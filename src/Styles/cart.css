@@ -1,0 +1,26 @@
+#s_1sfieldset {
+
+    width: 80% ;
+    text-align: left;
+    border-width:5px ;
+}
+
+#s_2sfieldset {
+
+    float:left; 
+    width: 60%;
+}
+
+#s_3sfieldset {
+
+    float:right;
+    width: 38% ; 
+    margin-left: 10px;
+}
+
+#s_4sfieldset {
+
+     float:left;
+     width: 60%;
+     margin-top: 10px;
+}
