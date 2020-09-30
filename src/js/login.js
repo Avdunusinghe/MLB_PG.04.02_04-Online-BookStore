@@ -3,7 +3,7 @@ function validateLogin(){
     //asign value 
     var username = document.getElementById("adusername").value; 
     var password = document.getElementById("adpassword").value;
-    var emailValidation  = document.getElementById("lblUsernameValidator");
+    var emailValidation  = document.getElementById("adlUsernameValidator");
     console.log(username);
     //check user name not null
     if(username == null || username =="" || ValidateEmail(username)==false){   
@@ -51,3 +51,8 @@ function adShowPassword(){
     }
 
 }
+
+//validate password pattern 
+
+
+
