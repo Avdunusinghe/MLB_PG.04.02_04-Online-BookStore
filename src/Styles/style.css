@@ -169,9 +169,15 @@ nav ul ul li {
   font-weight: bold;
 }
 
-	
+.pages-journey a{
+  color: #434542;
+  text-decoration: none;
+}	
 
-
+.pages-journey a:hover{
+  color: #1d1e1e;
+  font-weight: bold;
+}
 
 
 
