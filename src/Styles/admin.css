@@ -33,15 +33,16 @@
     margin-left: 50px;
   }
 
- /* .split {
+  .split {
     height: 100%;
     width: 50%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
+    
     overflow-x: hidden;
     padding-top: 20px;
-  }*/
+  }
 
   .left {
     left: 0;

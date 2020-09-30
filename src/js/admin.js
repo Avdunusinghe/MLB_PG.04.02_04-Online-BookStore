@@ -1,15 +1,15 @@
-function openNav() {
+function OpenAdminPanel() {
     document.getElementById("mySidenav").style.width = "250px";
   }
   
-  function closeNav() {
+  function claseAdminPanel() {
     document.getElementById("mySidenav").style.width = "0";
   }
 
 
-  function myFunction() {
-    var x = document.getElementById('myDIV'); 
-    //element will be invisible
+  function showAdminFunction() {
+    var x = document.getElementById('adminSetting'); 
+    //element invisible
     if (x.style.visibility === 'hidden') {      
       x.style.visibility = 'visible';
     } else {
