@@ -10,6 +10,7 @@
     border-width:3px ;
     float:left; 
     width: 60%;
+   
 }
 
 #s_3sfieldset {
@@ -17,6 +18,7 @@
     float:right;
     width: 38% ; 
     margin-left: 10px;
+    height: 650px;
 }
 
 #s_4sfieldset {
@@ -24,6 +26,7 @@
      float:left;
      width: 60%;
      margin-top: 10px;
+     
 }
 
 #s_image{
@@ -42,14 +45,29 @@
     overflow:auto;
     color: blanchedalmond;
     background-color: red;
+    transition: 0.5s;
 }
+#fixedbutton:hover{
 
-#conpy {
+    background-color:rgb(43, 45, 42) ;
+    cursor: pointer;
+    
+  }
+
+#conpybtn {
     width: 120px;
     height:40px;
     float: right;
     color: blanchedalmond;
     background-color:black;
+    transition: 0.5s;
+}
+
+#conpybtn:hover{
+
+    background-color:rgb(43, 45, 42) ;
+    cursor: pointer;
+    
 }
 
 #fixedbutton2 {
@@ -63,6 +81,13 @@
     overflow:auto;
     color: blanchedalmond;
     background-color: red;
+    transition: 0.5s;
+}
+#fixedbutton2:hover{
+
+    background-color:rgb(43, 45, 42) ;
+    cursor: pointer;
+    
 }
 
 #s_fontcolor{
