@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../src/Styles/loginpage.css">
 
         <script src="../src/js/login.js"></script> 
+        
     </head>
     <body>     
       <div id="container">
@@ -67,20 +68,26 @@
               <from  class="adloinbox" action="#" target="_self" method="POST">
 
                   <div class="adtextbox">
-                       <leble>User Name</leble> <br><br>
-                       <input type="text"  placeholder="Email or User Name" id="adusername" name="" value="" style="width: 470px;height:40px;"  > <br> <br>
+                    <div class="adbordercolor">
+                      <leble>Email</leble> <br><br>
+                       <input type="email"  placeholder="Email" id="adusername" name="" value="" style="width: 470px;height:40px;" > <br> <br>
+                       <div style="display:none" id="adlUsernameValidator">
+                         <label id="adlEmailValidation" style="color: red;">Invalid email format</label>
+                       </div>
                    </div>
 
                   <div class="adtextbox">
                       <lebel>Password</lebel><br><br>
-                      <input type="password" placeholder="Password" id="adpassword" name=""  value="" style="width: 470px;height:40px;"><br><br>
+                      <input type="password" placeholder="Password" id="adpassword" name=""  value="" style="width: 470px;height:40px;" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required><br><br>
                    </div>
+                    </div>
+                       
                    <div class="adpwcheckbox">
-                     <input type="checkbox"onclick="adShowPassword()">Show Password
+                     <input type="checkbox" onclick="adShowPassword()">Show Password
                    </div> 
 
                   <div class="adlgbtn">
-                      <input class="adlgbtn1" type="button" name="" id="submit" value="Login" onclick="validatelogin()"><br><br>
+                      <input class="adlgbtn1"  type="button" name="" id="submit" value="Login" onclick="validateLogin()"><br><br>
                      <a href="../src/createaccount.html">Sign Up</a>
                   </div>
                     <br><br>
@@ -88,16 +95,20 @@
                          <a href="https://www.facebook.com/" class = "adfblogo"><img src="../src/Images/IMG_FBICON.png" alt="fblogo" width="230" height="33" ></a>
                          <a href="https://mail.google.com/" class = "adgooglelogo"><img src="../src/Images/lMG_GOOGLE.png" alt="googlelogo" width="230" height="33" ></a> <br><br><br>
 
+                        
+                            
+
                   <div class="adfopw">
                        <center>
-                         <a href="##">FORGOT PASSWORD ?</a><br> <br><br>
+                         <a href="../src/Fogotpassword.html">FORGOT PASSWORD ?</a><br> <br><br>
                        </center>
                   </div>
           
               </from>
           </div>
     </center> 
-
+ 
+    
      
 
 
