@@ -8,7 +8,9 @@
         <link rel="stylesheet" href="../src/Styles/slideShow.css">
         <link rel="stylesheet" href="../src/Styles/Aboutus.css">
         <link rel="stylesheet" href="../src/Styles/cart.css">
+
         <script src="../src/js/Home.js"></script>
+        <Script src="../src/js/cart.js"></Script>
     </head>
     <body>     
       <div id="container">
@@ -53,13 +55,13 @@
       </nav>
 
         <!----------------------End of header section--------------------------------->
-        <br><br>
-      <div align="center">
+       
+      <div align="center" style="margin-top: 15px;">
       <fieldset id="s_1sfieldset">
           
         <legend><h3 id="s_fontcolor">My Shopping Cart </h3> </legend>
         <fieldset id="s_2sfieldset">
-        <img src ="../src/Images/book4.jpg" id="s_image" >
+        <img src ="../src/Images/book4.jpg" id="s_image" alt="Error">
         <br><br>
         <h4>The couple next door</h4>
         by Shari Lapena<br>
@@ -81,26 +83,28 @@
       </fieldset>
 
 
-      <fieldset id="s_3sfieldse">
-      <h4> Order Summary</h4><br><br>
+      <fieldset id="s_3sfieldset">
+      <h4> <u>Order Summary</u></h4><br><br>
       Total Items : 2<br>
       Total Price : 725.00<br>
       Delivery Address : <br><br><br>
-      <input type="submit" value="Confirm Pyment" id="conpy" name="conpy">  
+      
+      <input type="submit" value="Pay Now" id="conpybtn" name="conpybtn" onclick= " check()"> 
+      <h5 id="h_helpmasseje_demo" ></h5>  
       </fieldset>
 
           
 
       <fieldset id="s_4sfieldset">
-          <img src ="../src/Images/book2.jpg" id="s_image">
+          <img src ="../src/Images/book2.jpg" id="s_image" alt="Error">
           <br><br>
           <h4> Sidu Digasiya </h4> 
           by Hansi Ranasinghe <br>
           ISBN 978-0-230-57354-3<br>
           Price : 375.00<br><br><br>
-          <textarea id="s_textarea" ></textarea>
+       
           Quantity 
-          <input list = "hosting-plan" type = "text" id="s_qnt" id="s_qnt" ><br><br>
+          <input list = "hosting-plan" type = "text" id="s_qnt" name="s_qnt" ><br><br>
           <datalist id ="hosting-plan" >  
             <option value = "1"/>
             <option value = "2"/>
