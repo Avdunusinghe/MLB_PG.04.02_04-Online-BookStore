@@ -77,36 +77,6 @@ nav ul ul li {
 	display:list-item;
 	position: relative;
 }
-
-/* Second, Third and more Tiers	*/
-/*nav ul ul ul li {
-	position: relative;
-	top:-60px; 
-	left:170px;
-}*/
-/*.searchbar input[type=text]{
-	width:100px;
-	height: 30px;
-	background-color: rgb(42, 39, 39);
-	box-sizing: border-box;
-	border: 2px solid black;
- 	border-radius: 4px;
-	-webkit-transition:width.35s ease-in-out;
-	transition: width.35s ease-in-out;
-	background-image: url(../Images/IMG_SreachIcon.png);
-	background-repeat: no-repeat;
-	background-size:20px;
-	/*padding: 12px 20px 12px 50px;*/
-	/*background-position: right 5px ;
-}
-.searchbar input[type=text]:focus{
-	width: 250px;
-}*/
-
-
-
-
-
 .adsearchBox:hover > .adsearchInput {
     width: 240px;
     padding: 0 6px;
