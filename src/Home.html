@@ -7,10 +7,9 @@
         <title>Buybooks</title>
 
         <link rel="stylesheet" href="../src/Styles/style.css">
-        <link rel="stylesheet" href="../src/Styles/slideShow.css">
         <link rel="stylesheet" href="../src/Styles/CategoriesSubPages.css">
 
-        <script src="../src/js/Home.js"></script> 
+        <script src="../src\js\slidShow.js"></script> 
     </head>
     <body>     
       <div id="container">
@@ -62,77 +61,8 @@
          
       </div>
         
-            
-      
-     
-
+      <img name="slide" width="100%" height="500">
          
-                                                        
-        
-
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-              <div class="numbertext"></div>
-              <img src="../src/Images/Slidshow_1.jpg " width="100%" height="500">
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext"></div>
-              <img src="../src/Images/Slideshow_2.jpg" width=100% height="500">
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext"></div>
-              <img src="../src/Images/Slideshow_3.jpg" width=100% height="500">
-            </div>
-            
-        </div>
-        <!----------------------End of header section  0.1--------------------------------->
-            
-            
-            <div style="text-align:center"style = "position:relative;left:50px;top:-6px;">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-
-            <script>
-                var slideIndex = 0;
-                showSlides();
-                
-                function showSlides() {
-
-                  var i;
-                  var slides = document.getElementsByClassName("mySlides");
-                  var dots = document.getElementsByClassName("dot");
-
-                  for (i = 0; i < slides.length; i++) {
-
-                    slides[i].style.display = "none";
-
-                  }
-
-                  slideIndex++;
-
-                  if (slideIndex > slides.length){
-
-                     slideIndex = 1
-                    }    
-                  for (i = 0; i < dots.length; i++) {
-
-                    
-                    dots[i].className = dots[i].className.replace(" active", "");
-
-                  }
-                  slides[slideIndex-1].style.display = "block";  
-
-                  dots[slideIndex-1].className += " active";
-                  
-                  //calls a function  expression after run  milliseconds(set time ).
-                  setTimeout(showSlides, 6000); 
-                }
-                </script>
         <!----------------------End of header section--------------------------------->
 
 

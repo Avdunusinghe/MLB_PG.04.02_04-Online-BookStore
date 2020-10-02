@@ -22,9 +22,11 @@ function validateLogin(){
         alert("Please enter the password");
         //return fales;
     }
-   /* else{
+    /*else if (){
         alert('Login Succesfull');
     }*/
+
+    
     
 }
 
