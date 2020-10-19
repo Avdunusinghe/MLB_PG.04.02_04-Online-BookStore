@@ -61,28 +61,120 @@
          
       </div>
         
-    <h2>Welcome to Admin Panel</h2>
+    <h2 style="text-align: 30px left;">Welcome to Admin Panel</h2>
 
-    <span style="font-size:30px;cursor:pointer" onclick="OpenAdminPanel()">&#9776; open Admin Tools</span> <br> <br>
-   
-      <div id="mySidenav" class="sidenav">
-        <a href="#" class="closebtn" onclick="claseAdminPanel()">&times;</a>
-        <a href="#" onclick="showAdminFunction()">Add books</a>
-        <a href="#" onclick="showAdminFunction()">Messeges</a>
-        <a href="#" onclick="showAdminFunction()">Magazine</a>
-        <a href="#" onclick="showAdminFunction()">Maintenace</a>      
-        
-        <br><br>
-        
-      </div>
+      <center>
+        <div class="adbkupload">
+          <h2>Add New Book</h2>
+  
+          <form method="POST" action="">
+  
+              <lebel>Enter Book Inventory Id</lebel> <br>
+              <input type="text" id="bookInvetoryId" style="width: 270px;height:30px;" required><br><br>
+              
+              <lebel>Enter Book Title</lebel><br>
+              <input type="text" id="bookName" style="width: 270px;height:30px;" required><br><br>
+  
+              <lebel>Enter Book ISBN</lebel><br>
+              <input type="text" id="bookIsbn" style="width: 270px;height:30px;" required><br><br>
+              
+              <lebel>Enter Book Price</lebel><br>
+              <input type="text" id="bookPrice"style="width: 270px;height:30px;" required> <br><br>
+            
+              <lebel>Enter Book Author Id</lebel><br>
+              <input type="text" id="bookAuthor" style="width: 270px;height:30px;" required><br><br>
+            
+  
+              <lebel>Enter Book Publisher Id</lebel><br>
+              <input type="text" id="bookPublisherId" style="width: 270px;height:30px;" required><br><br>
+              
+  
+              <lebel>Enter Book Quantity</lebel><br>
+              <input type="text" id="bookQuntity" style="width: 270px;height:30px;" required><br><br>
 
-  <div class="split right" style="float: right; top: -500;">
-      <div id="adminSetting">
-          <button type="button">Add Books</button> <button type="button">Remove books</button>
+
+              <lebel>Enter Book Image</lebel><br><br>
+              <input type="file" id="BookImg" value="" required><br><br>
+
+              <input class="adlgbtn1"  type="button" name="" id="submit" value="Upload" onclick="validateAdminBooksUpdate()"><br><br>
+            
+  
+          </form>
+        
         </div>
-  </div>
+        
+      </center>
+      
+    <hr>
 
-    <br> <br> <br>
+    <center>
+      <div class="adbkupload">
+        <h2>Add New Authors</h2>
+
+        <form method="POST" action="">
+
+            <lebel>Enter Author's Name</lebel> <br>
+            <input type="text" id="BookAuthorName" style="width: 270px;height:30px;"><br><br>
+
+            <input class="adlgbtn1"  type="button" name="" id="submit" value="Submit" onclick="addAuthorValidation()"><br><br>
+            
+           
+        </form>
+      
+      </div>
+      
+    </center>
+
+    <hr>
+
+    
+    <center>
+      <div class="adbkupload">
+        <h2>Add New Publisher<h2>
+
+        <form method="POST" action="">
+
+            <lebel>Enter Publisher Name</lebel> <br>
+            <input type="text" id="BookPubName" style="width: 270px;height:30px;"><br><br>
+
+            <input class="adlgbtn1"  type="button" name="" id="submit" value="Submit" onclick="addPublisherValidate()"><br><br>
+            
+           
+        </form>
+      
+      </div>
+      
+    </center>
+
+    <hr>
+
+    <div class="adbkupload">
+      <h2>Check Customer Messeges</h2>
+
+      <form method="POST" action="">
+
+          
+
+          <input class="adlgbtn1"  type="button" name="" id="submit" value="Check Messeges" onclick=""><br><br>
+          
+         
+      </form>
+
+    
+        <div class="adbkupload">
+          <h2>Check Request Books</h2>
+    
+          <form method="POST" action="">
+    
+            <input class="adlgbtn1"  type="button" name="" id="submit" value="Check Messeges" onclick=""><br><br>
+              
+             
+          </form>
+    
+    
+    </div>
+      
+      
     
    
     
