@@ -1,27 +1,30 @@
 <?php
 
-// include config file
+
 include 'config.php'
 
-//Enter book category detail dboperation
-
-$category = $_POST["bookCategoryName"];
 
 
-$sql = "insert into bookcategory (Id,Category) values ('',$category)";
+       $category = $_POST["bookCategoryName"];
+
+        global  $conn;
 
 
-if($conn->query($sql)){
+        $sql = "insert into bookcategory(Id,Category)VALUES('','$category')";
 
-    echo "insert successfully";
-}
-else {
-    echo "Error:".$conn->error;
-}
 
-$conn->close();
+        if($conn->query($sql)){
 
-/*if(mysqli_query($conn,$sql)){
+            echo "insert successfully";
+        }
+        else {
+            echo "Error:".$conn->error;
+        }
+
+        $conn->close();
+
+
+        /*if(mysqli_query($conn,$sql)){
 
     echo"<script> alertt ('Record Insert Successfully!!!')</script>";
     header("Location:Admin.html");
@@ -54,5 +57,7 @@ else {
 }
 
 $conn->close();
+
+
 
 ?>
