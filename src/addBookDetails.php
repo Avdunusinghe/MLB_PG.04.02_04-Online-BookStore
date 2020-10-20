@@ -1,13 +1,15 @@
 <?php
 
 // include config file
-include 'config.php'
+include'config.php'
 
 //Enter book category detail dboperation
 
-$bookcategory = $_POST["bookCategoryName"];
+$bookCategory = $_POST["bookCategoryName"];
 
-$sql = "inset into bookcategory (Category) values ('', '$bookcategory')";
+
+$sql = "insert into bookcategory (Id,Category) values ('','$bookCategory')";
+
 
 if($conn->query($sql)){
 
@@ -19,8 +21,18 @@ else {
 
 $conn->close();
 
+/*if(mysqli_query($conn,$sql)){
 
-//Books Table sql dbOperations
+    echo"<script> alertt ('Record Insert Successfully!!!')</script>";
+    header("Location:Admin.html");
+}
+else{
+
+    echo"<script> alertt ('Error in insert in record')</script>";
+}
+mysqli_close($conn);*/
+
+/*//Books Table sql dbOperations
 $bookInventoryId = $_POST["bookInvetoryId"];
 $bookName = $_POST["bookName"];
 $bIsbn = $_POST["bookIsbn"];
@@ -30,7 +42,7 @@ $bPublisherId = $_POST["bookPublisherId"];
 $bQty = $_POST["bookQuntity"];
 $bImage = $_POST["bookImg"];
 
-$sql = "insert into books (BookCategoryId, BookTitle, ISBN, Price, AuthorId, PublisherId, AvailableQty, BookImage) 
+$sql = "insert into books (Id, BookCategoryId, BookTitle, ISBN, Price, AuthorId, PublisherId, AvailableQty, BookImage) 
 values ('', $bookInventoryId, '$bookName', $bIsbn, $bPrice, $bAthorId, $bPublisherId, $bQty, $bImage)";
 
 if($conn->query($sql)){
@@ -41,6 +53,6 @@ else {
     echo "Error:".$conn->error;
 }
 
-$conn->close();
+$conn->close();*/
 
 ?>
