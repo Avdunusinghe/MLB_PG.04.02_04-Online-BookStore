@@ -63,6 +63,26 @@
         
     <h2 style="text-align: 30px left;">Welcome to Admin Panel</h2>
 
+    <center>
+      <div class="adbkupload">
+        <h2>Add New Authors</h2>
+
+        <form method="POST" action="">
+
+            <lebel>Enter Author's Name</lebel> <br>
+            <input type="text" id="BookAuthorName" style="width: 270px;height:30px;"><br><br>
+
+            <input class="adlgbtn1"  type="button" name="" id="submit" value="Submit" onclick="addAuthorValidation()"><br><br>
+            
+           
+        </form>
+      
+      </div>
+      
+    </center>
+
+    <hr>
+
       <center>
         <div class="adbkupload">
           <h2>Add New Book</h2>
@@ -94,7 +114,7 @@
 
 
               <lebel>Enter Book Image</lebel><br><br>
-              <input type="file" id="BookImg" value="" required><br><br>
+              <input type="file" id="bookImg" value="" required><br><br>
 
               <input class="adlgbtn1"  type="button" name="" id="submit" value="Upload" onclick="validateAdminBooksUpdate()"><br><br>
             

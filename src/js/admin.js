@@ -7,7 +7,7 @@ function validateAdminBooksUpdate(){
     var authorId = document.getElementById("bookAuthor").value;
     var publicationId = document.getElementById("bookPublisherId").value;
     var bookQuantity = document.getElementById("bookQuntity").value;
-    var bookImage = document.getElementById("BookImg").value;
+    var bookImage = document.getElementById("bookImg").value;
 
 
     if (inventoryId == null || inventoryId == "") {
