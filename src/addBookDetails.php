@@ -1,16 +1,15 @@
 <?php
 
 
-include 'config.php'
+include 'config.php';
 
 
+ $category=$_POST["bookCategoryName"];
+       
+       
 
-       $category = $_POST["bookCategoryName"];
 
-        global  $conn;
-
-
-        $sql = "insert into bookcategory(Id,Category)VALUES('','$category')";
+        $sql = "insert into bookcategory(Id,Category) VALUES('','$category')";
 
 
         if($conn->query($sql)){
@@ -36,7 +35,7 @@ else{
 mysqli_close($conn);*/
 
 //Books Table sql dbOperations
-$bookInventoryId = $_POST["bookInvetoryId"];
+/*$bookInventoryId = $_POST["bookInvetoryId"];
 $bookName = $_POST["bookName"];
 $bIsbn = $_POST["bookIsbn"];
 $bPrice = $_POST["bookPrice"];
@@ -56,7 +55,7 @@ else {
     echo "Error:".$conn->error;
 }
 
-$conn->close();
+$conn->close();*/
 
 
 
