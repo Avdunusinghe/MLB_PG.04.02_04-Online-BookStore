@@ -1,14 +1,14 @@
 <?php
 
 // include config file
-include'config.php'
+include 'config.php'
 
 //Enter book category detail dboperation
 
-$bookCategory = $_POST["bookCategoryName"];
+$category = $_POST["bookCategoryName"];
 
 
-$sql = "insert into bookcategory (Id,Category) values ('','$bookCategory')";
+$sql = "insert into bookcategory (Id,Category) values ('',$category)";
 
 
 if($conn->query($sql)){
@@ -32,7 +32,7 @@ else{
 }
 mysqli_close($conn);*/
 
-/*//Books Table sql dbOperations
+//Books Table sql dbOperations
 $bookInventoryId = $_POST["bookInvetoryId"];
 $bookName = $_POST["bookName"];
 $bIsbn = $_POST["bookIsbn"];
@@ -53,6 +53,6 @@ else {
     echo "Error:".$conn->error;
 }
 
-$conn->close();*/
+$conn->close();
 
 ?>

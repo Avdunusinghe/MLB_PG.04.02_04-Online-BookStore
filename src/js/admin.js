@@ -105,7 +105,7 @@ function addAuthorValidation(){
 
 function addPublisherValidate(){
 
-  var publisherNameCheck = document.getElementById("BookPubName").value;
+  var publisherNameCheck = document.getElementById("bookPubName").value;
 
   if (publisherNameCheck == null || publisherNameCheck == "") {
 
