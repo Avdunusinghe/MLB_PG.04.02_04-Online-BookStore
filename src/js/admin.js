@@ -1,3 +1,14 @@
+function validateBookCategory(){
+  var bookvategoryName = document.getElementById("bookCategoryName").value;
+
+  if (bookvategoryName == null || bookvategoryName == "") {
+
+    alert("Please enter Category Name");
+    return false;
+
+  }
+}
+
 function validateAdminBooksUpdate(){
 
     var inventoryId = document.getElementById("bookInvetoryId").value;
@@ -75,7 +86,7 @@ function validateAdminBooksUpdate(){
 
 function addAuthorValidation(){
 
-  var authorNameCheck = document.getElementById("BookAuthorName").value;
+  var authorNameCheck = document.getElementById("bookAuthorName").value;
 
 
   if (authorNameCheck == null || authorNameCheck == "") {
