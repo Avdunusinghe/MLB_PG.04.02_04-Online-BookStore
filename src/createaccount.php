@@ -3,7 +3,7 @@
         include 'config.php';
              
          // declare variables.
-			 $firstName=$_POST["h_fname"];
+	      $firstName=$_POST["h_fname"];
              $lastName=$_POST["h_lname"];
              $dob=$_POST["h_dob"];
              $gender=$_POST["h_gender"];
