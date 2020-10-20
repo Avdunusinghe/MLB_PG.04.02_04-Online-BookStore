@@ -67,13 +67,13 @@
       <div class="adbkupload">
         <h2>Add New Book Category</h2>
 
-        <form method="POST" action="addBookDetails.php">
+        <form method="POST" action="addCategoryDetails.php">
 
             <lebel>Category Name</lebel> <br>
             <input type="text" name="bookCategoryName" style="width: 270px;height:30px;"><br><br>
 
-            <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="validateBookCategory()"><br><br>
-            
+            <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="validateBookCategory()">
+            <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
            
         </form>
       
@@ -87,13 +87,13 @@
       <div class="adbkupload">
         <h2>Add New Publisher<h2>
 
-        <form method="POST" action="addBookDetails.php">
+        <form method="POST" action="addpublisher.php">
 
-            <lebel>Enter Publisher Name</lebel> <br>
+            <Enter the Publisher Name</lebel></Enter> <br>
             <input type="text" name="bookPubName" style="width: 270px;height:30px;"><br><br>
 
-            <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="addPublisherValidate()"><br><br>
-            
+            <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="addPublisherValidate()">
+            <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
            
         </form>
       
@@ -107,13 +107,13 @@
       <div class="adbkupload">
         <h2>Add New Authors</h2>
 
-        <form method="POST" action="">
+        <form method="POST" action="addAuthor.php">
 
             <lebel>Enter Author's Name</lebel> <br>
             <input type="text" name="bookAuthorName" style="width: 270px;height:30px;"><br><br>
 
-            <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="addAuthorValidation()"><br><br>
-            
+            <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="addAuthorValidation()">
+            <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
            
         </form>
       
@@ -158,7 +158,7 @@
 
               <input class="adlgbtn1"  type="submit" name="" id="submit" value="Upload" onclick="validateAdminBooksUpdate()">
 
-              <input type="reset" class="adlgbtn1" id="resetBookDetails" name="##" value="Reset"> <br><br>
+              <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
             
   
           </form>
