@@ -1,7 +1,8 @@
 <?php
-
+       //conect to config.php .
         include 'config.php';
-			 
+             
+         // declare variables.
 			 $firstName=$_POST["h_fname"];
              $lastName=$_POST["h_lname"];
              $dob=$_POST["h_dob"];
@@ -12,19 +13,20 @@
              $password=$_POST["h_rpwd"];
 
 			
-				
-				global  $conn;
+			
 		
-					
+				//insert query
 			         $sql = "insert into users(Id,FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password,UserType,IsActive) VALUES('','$firstName','$lastName','$dob','$gender','$email','$contactNumber','$address','$password','Member',TRUE)";
-						if($conn->query($sql)){
+                        
+                 // Check insert successfully or not.
+                        if($conn->query($sql)){
 							  echo " Inserted successfully";
 						}
 						else{
 							echo "Error:". $conn->error;
 						}
-
+              
+          //close the data base
 			  $conn->close(); 
 
-
- ?>
+?>
