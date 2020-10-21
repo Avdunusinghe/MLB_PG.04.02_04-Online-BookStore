@@ -121,5 +121,6 @@ function addPublisherValidate(){
 }
 }
 
-function checkMesseges() {
-  window.open("../src/checkMsg.php");
+function addCategory() {
+  window.open("../src/addCategory.html");
+}

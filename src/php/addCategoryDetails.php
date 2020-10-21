@@ -9,7 +9,7 @@ include 'config.php';
        $sql = "insert into bookcategory (Id, Category) VALUES ('', '$category')";
 
 
-        if($conn->query($sql)){
+       /* if($conn->query($sql)){
 
             echo "insert successfully";
         }
@@ -17,21 +17,21 @@ include 'config.php';
             echo "Error:".$conn->error;
         }
 
-        $conn->close();
+        $conn->close();*/
 
 
 
 
-        /*if(mysqli_query($conn,$sql)){
+        if(mysqli_query($conn,$sql)){
 
-    echo"<script> alertt ('Record Insert Successfully!!!')</script>";
-    header("Location:Admin.html");
-}
-else{
+            echo"<script> alertt ('Record Insert Successfully!!!')</script>";
+            header("Location:Category.php");
+        }
+        else{
 
-    echo"<script> alertt ('Error in insert in record')</script>";
-}
-mysqli_close($conn);*/
+            echo"<script> alertt ('Error in insert in record')</script>";
+        }
+        mysqli_close($conn);
 
 //Books Table sql dbOperations
 /*$bookInventoryId = $_POST["bookInvetoryId"];

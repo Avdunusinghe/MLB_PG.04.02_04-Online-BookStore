@@ -78,11 +78,13 @@
                         if($result->num_rows>0){
 
                           while($row = $result->fetch_assoc()){
-                               echo"<tr><td>".$row["ReqId"]."</td>
+                               echo"<tr>
+                               <td>".$row["ReqId"]."</td>
                                <td>".$row["Name"]."</td>
                                <td>".$row["ContactNo"]."</td>
                                <td>".$row["Email"]."</td>
-                               <td>".$row["BookReq"]."</td></tr>";
+                               <td>".$row["BookReq"]."</td>
+                               </tr>";
                            }
                         }
                         else{
@@ -93,3 +95,49 @@
                     ?>
                
             </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+
+             <!--------------------------Footer below--------------------------------------> 
+       <div class="footer">
+        <div class="container">
+          <div class="row-ft">
+            <div class="footer-col1">
+              <p><b>More useful links</b></p>
+              <ul>
+                <li><a href="../src/Aboutus.html">About us</a></li>
+                <li><a href="../src/contactus.html">Contact is</a></li>
+                <li><a href="../src/requestbook.html">Request books</a></li>
+                <li><a href="../src/privacyPolicy.html">Privacy policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-col2">
+              <p><b>Follow us on- </b></p>
+              <ul>
+                <li><a href="#">FaceBook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instergram</a></li>
+                <li><a href="#">YouTube</a></li>
+              </ul>
+            </div>
+            <div class="footer-col3">
+              <img src="../src/Images/BuyBooks Logo.png" alt="Error" height="90">
+              <h3>Contact us</h3>
+              <p>13A, Main street, <br>Colombo 06.<br>contact@buybooks.lk</p>
+            </div>
+            <div class="footer-col4">
+              <img src="../src/Images/app-store.png" alt="Error" width="120px">
+              <img src="../src/Images/play-store.png" alt="Error" width="120px">
+            </div>
+          </div>
+          <hr width="100%">
+          <div class="last-ele">
+            <p>@All rights received.</p>
+            <img src="../src/Images/card-logos.png" alt="Error" height="30px">
+          </div>
+        </div>
+      </div>     
+      <!----------------------Footer end--------------------------------->
+
+  </body>
+</html>

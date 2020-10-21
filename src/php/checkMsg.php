@@ -78,11 +78,13 @@
                         if($result->num_rows>0){
 
                           while($row = $result->fetch_assoc()){
-                               echo"<tr><td>".$row["MsgId"]."</td>
+                               echo"<tr>
+                               <td>".$row["MsgId"]."</td>
                                <td>".$row["Name"]."</td>
                                <td>".$row["ContactNo"]."</td>
                                <td>".$row["Email"]."</td>
-                               <td>".$row["Msg"]."</td></tr>";
+                               <td>".$row["Msg"]."</td>
+                               </tr>";
                            }
                         }
                         else{
@@ -100,7 +102,7 @@
 
 
 
-
+        <br><br><br><br><br><br><br><br><br><br><br><br>
 
 
         

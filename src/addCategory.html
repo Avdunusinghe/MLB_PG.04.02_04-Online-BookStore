@@ -63,23 +63,11 @@
         
     <h2 style="text-align: 30px left;">Welcome to Admin Panel</h2>
 
-
-    <div class="adbkupload">
-      <h2>Check Customer Messeges||||</h2>
-
-           <a class="adlgbtn1" href="../src/checkMsg.php">Check Messeges</a> <br><br><br><br><br><br><br><br>
-      </div>        
-    <div class="adbkupload">
-      <h2>Check Request Books</h2>
-
-              <a class="adlgbtn1" href="../src/checkReqBookMsg.php">Check Request Books </a> <br><br><br><br><br><br><br><br>  
-      </div>
-      <hr>
     <center>
       <div class="adbkupload">
         <h2>Add New Book Category</h2>
 
-        <form method="POST" action="addCategoryDetails.php">
+        <form method="POST" action="../src/php/addCategoryDetails.php">
 
             <lebel>Category Name</lebel> <br>
             <input type="text" name="bookCategoryName" style="width: 270px;height:30px;"><br><br>
@@ -90,8 +78,26 @@
         </form>
       
       </div>
+
+      
       
     </center>
+
+    <center>
+      <div class="adbkupload">
+        <h2>Check Customer Messeges||||</h2>
+  
+             <a class="adlgbtn1" href="../src/php/checkMsg.php">Check Messeges</a> <br><br><br><br><br><br><br><br>
+        </div>        
+      <div class="adbkupload">
+        <h2>Check Request Books</h2>
+  
+                <a class="adlgbtn1" href="../src/php/checkReqBookMsg.php">Check Request Books </a> <br><br><br><br><br><br><br><br>  
+        </div>
+    </center>
+    
+      <hr>
+  
 
     <hr>
 
@@ -101,7 +107,7 @@
 
         <form method="POST" action="addpublisher.php">
 
-            <Enter the Publisher Name</lebel></Enter> <br>
+            <labal>Enter the Publisher Name</lebel></Enter> <br>
             <input type="text" name="bookPubName" style="width: 270px;height:30px;"><br><br>
 
             <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="addPublisherValidate()">
