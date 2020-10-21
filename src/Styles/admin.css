@@ -4,13 +4,23 @@
   }
   .adlgbtn1{
     text-decoration: none;
-    color:whitesmoke;
+    color:white;
     background-color: black;
     padding: 3px 10px;
     font-size: medium;
     font-weight: 100;  
     font-family: Arial, Helvetica, sans-serif;
   }
+  
+  .adcheckMsg{
+    text-decoration: none;
+    color:whitesmoke;
+    background-color: black;
+    padding: 3px 10px;
+    font-size: medium;
+    font-weight: 100;  
+    font-family: Arial, Helvetica, sans-serif;
+}
   .adlgbtnReset{
     text-decoration: none;
     color:whitesmoke;
