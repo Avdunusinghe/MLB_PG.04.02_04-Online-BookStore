@@ -123,6 +123,3 @@ function addPublisherValidate(){
 
 function checkMesseges() {
   window.open("../src/checkMsg.php");
-
-  
-}
