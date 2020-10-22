@@ -63,25 +63,28 @@
         
     <h2 style="text-align: 30px left;">Welcome to Admin Panel</h2>
 
-    <center>
-      <div class="adbkupload">
-        <h2>Add New Book Category</h2>
+   
+      <center>
+        <div class="adbkupload">
+          <h2>Add New Publisher<h2>
+  
+          <form method="POST" action="../src/php/addPublisher.php">
+  
+              <labal>Enter the Publisher Name</lebel></Enter> <br>
+              <input type="text" name="bookPubName" style="width: 270px;height:30px;"><br><br>
+  
+              <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="addPublisherValidate()">
+              <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
+             
+          </form>
+        
+        </div>
+        
+      </center>
 
-        <form method="POST" action="../src/php/addCategoryDetails.php">
-
-            <lebel>Category Name</lebel> <br>
-            <input type="text" name="bookCategoryName" style="width: 270px;height:30px;"><br><br>
-
-            <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="validateBookCategory()">
-            <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
-           
-        </form>
       
-      </div>
-
       
-      
-    </center>
+  
 
     <center>
       <div class="adbkupload">
@@ -105,7 +108,7 @@
       <div class="adbkupload">
         <h2>Add New Publisher<h2>
 
-        <form method="POST" action="addpublisher.php">
+        <form method="POST" action="../php/addpublisher.php">
 
             <labal>Enter the Publisher Name</lebel></Enter> <br>
             <input type="text" name="bookPubName" style="width: 270px;height:30px;"><br><br>
@@ -121,71 +124,7 @@
 
     <hr>
 
-    <center>
-      <div class="adbkupload">
-        <h2>Add New Authors</h2>
-
-        <form method="POST" action="addCategoryDetails.php">
-
-            <lebel>Enter Author's Name</lebel> <br>
-            <input type="text" name="bookAuthorName" style="width: 270px;height:30px;"><br><br>
-
-            <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="addAuthorValidation()">
-            <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
-           
-        </form>
-      
-      </div>
-      
-    </center>
-
-    <hr>
-
-      <center>
-        <div class="adbkupload">
-          <h2>Add New Book</h2>
-  
-          <form method="POST" action="addBookDetails.php">
-  
-              <lebel>Enter Book Inventory Id</lebel> <br>
-              <input type="text" name="bookInvetoryId" style="width: 270px;height:30px;" required><br><br>
-              
-              <lebel>Enter Book Title</lebel><br>
-              <input type="text" name="bookName" style="width: 270px;height:30px;" required><br><br>
-  
-              <lebel>Enter Book ISBN</lebel><br>
-              <input type="text" name="bookIsbn" style="width: 270px;height:30px;" required><br><br>
-              
-              <lebel>Enter Book Price</lebel><br>
-              <input type="text" name="bookPrice"style="width: 270px;height:30px;" required> <br><br>
-            
-              <lebel>Enter Book Author Id</lebel><br>
-              <input type="text" name="bookAuthor" style="width: 270px;height:30px;" required><br><br>
-            
-  
-              <lebel>Enter Book Publisher Id</lebel><br>
-              <input type="text" name="bookPublisherId" style="width: 270px;height:30px;" required><br><br>
-              
-  
-              <lebel>Enter Book Quantity</lebel><br>
-              <input type="text" name="bookQuntity" style="width: 270px;height:30px;" required><br><br>
-
-
-              <lebel>Enter Book Image</lebel><br><br>
-              <input type="file" name="bookImg" value="" required><br><br>
-
-              <input class="adlgbtn1"  type="submit" name="" id="submit" value="Upload" onclick="validateAdminBooksUpdate()">
-
-              <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
-            
-  
-          </form>
-        
-        </div>
-        
-      </center>
-      
-    <hr>
+    
 
     
 

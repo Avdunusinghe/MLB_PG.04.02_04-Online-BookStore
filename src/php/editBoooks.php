@@ -70,22 +70,74 @@
 
         <center>
             <div class="adbkupload">
-                <h2>update Book Category</h2>
-        
-                <form method="POST" action="updatecategory.php">
+                <h2>Add New Authors</h2>
 
-                    <label>Id<label> <br><br>
+                <form method="POST" action="addAuthor.php">
+
+                    <label>Id<label> <br>
                     <input type="text" name="id" readonly name="id"value="<?php echo $_REQUEST['re']?>" style="width: 270px;height:30px;"> <br>
-                    <lebel>Category Name</lebel> <br>
-                    <input type="text" name="bookCategoryName" value="<?php echo $_REQUEST['cname']?>" style="width: 270px;height:30px;"><br><br>
-        
-                    <input class="adlgbtn1"  type="submit" name="cname" id="submit" value="Update" onclick="validateBookCategory()">
+
+                    <lebel>Enter Author's Name</lebel> 
+                    <input type="text" name="bookAuthorName"  value="<?php echo $_REQUEST['aname']?>" style="width: 270px;height:30px;"><br><br>
+
+                    <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="addAuthorValidation()">
                     <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
-                   
+                
                 </form>
+            
+            </div>
+            
+            </center>
+
+            <center>
+        <div class="adbkupload">
+          <h2>Add New Book</h2>
+  
+          <form method="POST" action="updateBooks.php">
+
+              <label>Id<label> <br>
+              <input type="text" name="id" readonly name="id"value="<?php echo $_REQUEST['re']?>" style="width: 270px;height:30px;"> <br>            
+  
+              <lebel>Enter Book Inventory Id</lebel> <br>
+              <input type="text" name="bookInvetoryId"  value="<?php echo $_REQUEST['cid']?>"style="width: 270px;height:30px;" required><br><br>
               
-              </div>
-        </center>
+              <lebel>Enter Book Title</lebel><br>
+              <input type="text" name="bookName"  value="<?php echo $_REQUEST['tid']?>"style="width: 270px;height:30px;" required><br><br>
+  
+              <lebel>Enter Book ISBN</lebel><br>
+              <input type="text" name="bookIsbn" value="<?php echo $_REQUEST['isbn']?>" style="width: 270px;height:30px;" required><br><br>
+              
+              <lebel>Enter Book Price</lebel><br>
+              <input type="text" name="bookPrice" value="<?php echo $_REQUEST['pr']?>"style="width: 270px;height:30px;" required> <br><br>
+            
+              <lebel>Enter Book Author Id</lebel><br>
+              <input type="text" name="bookAuthor" value="<?php echo $_REQUEST['atr']?>"style="width: 270px;height:30px;" required><br><br>
+            
+  
+              <lebel>Enter Book Publisher Id</lebel><br>
+              <input type="text" name="bookPublisherId"value="<?php echo $_REQUEST['pid']?>" style="width: 270px;height:30px;" required><br><br>
+              
+  
+              <lebel>Enter Book Quantity</lebel><br>
+              <input type="text" name="bookQuntity" value="<?php echo $_REQUEST['qty']?>" style="width: 270px;height:30px;" required><br><br>
+
+
+              <lebel>Enter Book Image</lebel><br><br>
+              <input type="file" name="bookImg" value="<?php echo $_REQUEST['bimg']?>" required><br><br>
+
+              <input class="adlgbtn1"  type="submit" name="" id="submit" value="Upload" onclick="validateAdminBooksUpdate()">
+
+              <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
+            
+  
+          </form>
+        
+        </div>
+        
+      </center>
+      
+
+          
 
         
 

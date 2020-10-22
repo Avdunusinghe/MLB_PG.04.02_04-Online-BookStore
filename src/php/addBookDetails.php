@@ -14,15 +14,16 @@ $bImage = $_POST["bookImg"];
 $sql = "insert into books (Id, BookCategoryId, BookTitle, ISBN, Price, AuthorId, PublisherId, AvailableQty, BookImage,IsActive)
 VALUES('', $bookInventoryId, '$bookName', $bIsbn, $bPrice, $bAthorId, $bPublisherId, $bQty, '$bImage',TRUE)";
 
-if($conn->query($sql)){
+if(mysqli_query($conn,$sql)){
 
-    echo "insert successfully";
+    echo"<script> alertt ('Record Insert Successfully!!!')</script>";
+    header("Location:Books.php");
 }
-else {
-    echo "Error:".$conn->error;
-}
+else{
 
-$conn->close();
+    echo"<script> alertt ('Error in insert in record')</script>";
+}
+mysqli_close($conn);
 
 
 

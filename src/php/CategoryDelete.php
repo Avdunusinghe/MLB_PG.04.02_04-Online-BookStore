@@ -8,15 +8,7 @@ $sql = "DELETE FROM  bookcategory  WHERE Id = $catDelete"; // delete query
 
 
 
-/*if($conn->query($sql)){
 
-    echo "insert successfully";
-}
-else {
-    echo "Error:".$conn->error;
-}
-
-$conn->close();*/
 
         if(mysqli_query($conn,$sql)){
 

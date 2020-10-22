@@ -1,15 +1,15 @@
 <?php
 
-//include config file
 include 'config.php';
 
- //eclare variables.
- $author = $_POST["bookAuthorName"];    
-    
-        //insert to data author table
-       $sql = "insert into author (Id, Name) VALUES ('','$author')";
+$aDelete = $_GET['re']; // get id through query string
 
-        //check connection
+$sql = "DELETE FROM  author  WHERE Id = $aDelete"; // delete query
+
+
+
+
+
         if(mysqli_query($conn,$sql)){
 
             echo"<script> alertt ('Record Insert Successfully!!!')</script>";

@@ -9,6 +9,15 @@ include 'config.php';
        $sql = "insert into bookcategory (Id, Category) VALUES ('', '$category')";
 
 
+       /* if($conn->query($sql)){
+
+            echo "insert successfully";
+        }
+        else {
+            echo "Error:".$conn->error;
+        }
+
+        $conn->close();*/
 
 
 

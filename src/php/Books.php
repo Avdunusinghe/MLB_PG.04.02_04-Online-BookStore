@@ -70,7 +70,7 @@
                 <div class="addminPanel">
                     <ul>
                         <li><a href="../php/Category.php">Category</a></li>
-                        <li><a href="../php/Publisher.php">Publisher</a></li>
+                        <li><a href=../php/Publisher.php>Publisher</a></li>
                         <li><a href="../php/Author.php">Author</a></li>
                         <li><a href="../php/Books.php">Books</a></li>
                         <li><a href="#about">Messeges</a></li>
@@ -83,14 +83,21 @@
                     <tr>
                         <th style="width:15%;">
                             
-                            <a class=addButton href="../addCategory.html">Add Category</a>
+                            <a class=addButton href="../addBooks.html">Add Books</a>
                         </th>
                         <th style="width: 10%;">Id</th>
-                        <th style="width: 90%;">catrgory</th>
+                        <th style="width: 20%;">Book Category ID</th>
+                        <th style="width: 20%;">Book Title</th>
+                        <th style="width: 20%;">ISBN</th>
+                        <th style="width: 20%;">Price</th>
+                        <th style="width: 20%;">Author ID</th>
+                        <th style="width: 20%;">Publisher ID</th>
+                        <th style="width: 20%;">AvailableQty</th>
+                        <th style="width: 20%;">Book Image</th>
                     </tr>
                       <?php
                         include 'config.php';
-                        $Sql = "select * from bookcategory";
+                        $Sql = "select * from books";
 
                         $result = $conn->query($Sql);
 
@@ -98,10 +105,18 @@
 
                         while($row = $result->fetch_assoc()){
                             echo"<tr>
-                            <td><a class='addButton' id=deleteCategory href='editcategoryfr.php?re=$row[Id]&cname=$row[Category]'>Edit</a>
-                            <a class='delButton' id=deleteCategory href='CategoryDelete.php?re=$row[Id]'>Delete</a></td>
+                            <td><a class='addButton' id=deleteCategory href='editBoooks.php?
+                            re=$row[Id]&cid=$row[BookCategoryId]&tid=$row[BookTitle]&isbn=$row[ISBN]&pr=$row[Price]&atr=$row[AuthorId]&pid=$row[PublisherId]&qty=$row[AvailableQty]&bimg=$row[BookImage]'>Edit</a></td>                            
                             <td>".$row["Id"]."</td>
-                            <td>".$row["Category"]."</td>
+                            <td>".$row["BookCategoryId"]."</td>
+                            <td>".$row["BookTitle"]."</td>
+                            <td>".$row["ISBN"]."</td>
+                            <td>".$row["Price"]."</td>
+                            <td>".$row["AuthorId"]."</td>
+                            <td>".$row["PublisherId"]."</td>
+                            <td>".$row["AvailableQty"]."</td>
+                            <td>".$row["BookImage"]."</td>
+                            <td><a class='delButton' id=deleteCategory href='authorDelete.php?re=$row[Id]'>Delete</a></td>
                             </tr>";
                         }
                         }

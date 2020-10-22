@@ -8,14 +8,15 @@ include 'config.php';
 
        $sql = "insert into publisher (Id, Name) VALUES ('','$publisher')";
 
-        if($conn->query($sql)){
+       if(mysqli_query($conn,$sql)){
 
-            echo "insert successfully";
-        }
-        else {
-            echo "Error:".$conn->error;
-        }
+        echo"<script> alertt ('Record Insert Successfully!!!')</script>";
+        header("Location:Publisher.php");
+    }
+    else{
 
-        $conn->close();
+        echo"<script> alertt ('Error in insert in record')</script>";
+    }
+    mysqli_close($conn);
 
 ?>

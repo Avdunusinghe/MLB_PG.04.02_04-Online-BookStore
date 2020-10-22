@@ -70,22 +70,26 @@
 
         <center>
             <div class="adbkupload">
-                <h2>update Book Category</h2>
-        
-                <form method="POST" action="updatecategory.php">
+                <h2>Add New Authors</h2>
 
-                    <label>Id<label> <br><br>
+                <form method="POST" action="addAuthor.php">
+
+                    <label>Id<label> <br>
                     <input type="text" name="id" readonly name="id"value="<?php echo $_REQUEST['re']?>" style="width: 270px;height:30px;"> <br>
-                    <lebel>Category Name</lebel> <br>
-                    <input type="text" name="bookCategoryName" value="<?php echo $_REQUEST['cname']?>" style="width: 270px;height:30px;"><br><br>
-        
-                    <input class="adlgbtn1"  type="submit" name="cname" id="submit" value="Update" onclick="validateBookCategory()">
+
+                    <lebel>Enter Author's Name</lebel> 
+                    <input type="text" name="bookAuthorName"  value="<?php echo $_REQUEST['aname']?>" style="width: 270px;height:30px;"><br><br>
+
+                    <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="addAuthorValidation()">
                     <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
-                   
+                
                 </form>
-              
-              </div>
-        </center>
+            
+            </div>
+            
+            </center>
+
+          
 
         
 
