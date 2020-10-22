@@ -72,9 +72,10 @@
                         <li><a href="../php/Category.php">Category</a></li>
                         <li><a href="../php/Publisher.php">Publisher</a></li>
                         <li><a href="../php/Author.php">Author</a></li>
-                        <li><a href="#about">Books</a></li>
-                        <li><a href="#about">Messeges</a></li>
-                        <li><a href="#about">Req Book</a></li>
+                        <li><a href="../php/Books.php">Books</a></li>
+                        <li><a href="../php/Client.php">Client Management</a></li>
+                        <li><a href="../php/ClientMsg.php">Messeges</a></li>
+                        <li><a href="../php/Requestbook.php">Book Request</a></li>
                     </ul>
                 </div>                
             </td>
@@ -83,7 +84,7 @@
                     <tr>
                         <th style="width:15%;">
                             
-                            <a class=addButton href=""></a>
+                            <label>changes<label>
                         </th>
                         <th style="width: 10%;"> MSg Id</th>
                         <th style="width: 15%;">Name</th>
@@ -101,7 +102,7 @@
 
                         while($row = $result->fetch_assoc()){
                             echo"<tr>
-                            <td><a class='delButton' id=deleteCategory href='authorDelete.php?re=$row[Id]'>Delete</a></td>
+                            <td><a class='delButton' id=deleteCategory href='clinetMsgDelete.php?id=$row[MsgId]'>Delete</a></td>
                             <td>".$row["MsgId"]."</td>
                             <td>".$row["Name"]."</td>
                             <td>".$row["ContactNo"]."</td>

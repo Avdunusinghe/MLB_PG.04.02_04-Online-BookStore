@@ -62,11 +62,7 @@
                   </div>  
           </div>
         </nav>
-        <?php
-          
-           //echo $_POST['re'];
-          // echo $_POST['cname'];
-        ?>
+        
 
         <center>
             <div class="adbkupload">

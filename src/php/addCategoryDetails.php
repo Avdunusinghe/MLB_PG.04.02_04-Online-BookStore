@@ -15,12 +15,12 @@ include 'config.php';
 
         if(mysqli_query($conn,$sql)){
 
-            echo"<script> alertt ('Record Insert Successfully!!!')</script>";
+            echo"<script> alert ('Record Insert Successfully!!!')</script>";
             header("Location:Category.php");
         }
         else{
 
-            echo"<script> alertt ('Error in insert in record')</script>";
+            echo"<script> alert ('Error in insert in record')</script>";
         }
         mysqli_close($conn);
 

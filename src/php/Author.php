@@ -69,13 +69,13 @@
             <td style="width: 10%;">
                 <div class="addminPanel">
                     <ul>
-                        <li><a href="../php/Category.php">Category</a></li>
-                        <li><a href=../php/Publisher.php>Publisher</a></li>
+                    <li><a href="../php/Category.php">Category</a></li>
+                        <li><a href="../php/Publisher.php">Publisher</a></li>
                         <li><a href="../php/Author.php">Author</a></li>
                         <li><a href="../php/Books.php">Books</a></li>
-                        <li><a href="#about">Client Management</a></li>
-                        <li><a href="#about">Messeges</a></li>
-                        <li><a href="#about">Req Book</a></li>
+                        <li><a href="../php/Client.php">Client Management</a></li>
+                        <li><a href="../php/ClientMsg.php">Messeges</a></li>
+                        <li><a href="../php/Requestbook.php">Book Request</a></li>
                     </ul>
                 </div>                
             </td>
@@ -99,8 +99,8 @@
 
                         while($row = $result->fetch_assoc()){
                             echo"<tr>
-                            <td><a class='addButton' id=deleteCategory href='editauthor.php?re=$row[Id]&aname=$row[Name]'>Edit</a>
-                            <a class='delButton' id=deleteCategory href='authorDelete.php?re=$row[Id]'>Delete</a></td>
+                            <td><a class='addButton' id=deleteCategory href='editauthor.php?id=$row[Id]&aname=$row[Name]'>Edit</a>
+                            <a class='delButton' id=deleteCategory href='authorDelete.php?id=$row[Id]'>Delete</a></td>
                             <td>".$row["Id"]."</td>
                             <td>".$row["Name"]."</td>
                             </tr>";

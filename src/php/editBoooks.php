@@ -68,26 +68,7 @@
           // echo $_POST['cname'];
         ?>
 
-        <center>
-            <div class="adbkupload">
-                <h2>Add New Authors</h2>
-
-                <form method="POST" action="addAuthor.php">
-
-                    <label>Id<label> <br>
-                    <input type="text" name="id" readonly name="id"value="<?php echo $_REQUEST['re']?>" style="width: 270px;height:30px;"> <br>
-
-                    <lebel>Enter Author's Name</lebel> 
-                    <input type="text" name="bookAuthorName"  value="<?php echo $_REQUEST['aname']?>" style="width: 270px;height:30px;"><br><br>
-
-                    <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="addAuthorValidation()">
-                    <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
-                
-                </form>
-            
-            </div>
-            
-            </center>
+        
 
             <center>
         <div class="adbkupload">

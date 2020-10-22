@@ -2,7 +2,7 @@
 
 include 'config.php';
 
-$aDelete = $_GET['re']; // get id through query string
+$aDelete = $_GET['id']; // get id through query string
 
 $sql = "DELETE FROM  author  WHERE Id = $aDelete"; // delete query
 
@@ -12,12 +12,13 @@ $sql = "DELETE FROM  author  WHERE Id = $aDelete"; // delete query
 
         if(mysqli_query($conn,$sql)){
 
-            echo"<script> alertt ('Record Insert Successfully!!!')</script>";
+            echo"<script> alert('Athot Delete Successfully!!!')</script>";
             header("Location:Author.php");
         }
         else{
 
-            echo"<script> alertt ('Error in insert in record')</script>";
+            echo"<script> alert('Books Table Use this Book')</script>";
+            header("Location:Author.php");
         }
         mysqli_close($conn);
 ?>

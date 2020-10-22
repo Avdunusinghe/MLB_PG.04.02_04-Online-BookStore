@@ -84,23 +84,17 @@
                     <tr>
                         <th style="width:15%;">
                             
-                            <label>Changes<label>
+                            <label>changes<label>
                         </th>
-                        <th style="width: 10%;">Id</th>
-                        <th style="width: 15%;">First Name</th>
-                        <th style="width: 15%;">LastName</th>
-                        <th style="width: 15%;">DOB</th>
-                        <th style="width: 15%;">Gender</th>
+                        <th style="width: 10%;"> MSg Id</th>
+                        <th style="width: 15%;">Name</th>
+                        <th style="width: 15%;">Mombile Number</th>
                         <th style="width: 15%;">Email</th>
-                        <th style="width: 15%;">MobileNo</th>
-                        <th style="width: 15%;">Address</th>
-                        <th style="width: 15%;">UserType</th>
-
-                        
+                        <th style="width: 15%;">Message</th>
                     </tr>
                       <?php
                         include 'config.php';
-                        $Sql = "select * from users where IsActive = 1";
+                        $Sql = "select * from requestbooks";
 
                         $result = $conn->query($Sql);
 
@@ -108,17 +102,13 @@
 
                         while($row = $result->fetch_assoc()){
                             echo"<tr>
-                            <td><a class='delButton' id=deleteCategory href='userDelete.php?id=$row[Id]'>Delete</a></td>
-                            <td>".$row["Id"]."</td>
-                            <td>".$row["FirstName"]."</td>
-                            <td>".$row["LastName"]."</td>
-                            <td>".$row["Dob"]."</td>
-                            <td>".$row["Gender"]."</td>
+                            <td><a class='delButton' id=deleteCategory href='requestDelete.php?id=$row[ReqId]'>Delete</a></td>
+                            <td>".$row["ReqId"]."</td>
+                            <td>".$row["Name"]."</td>
+                            <td>".$row["ContactNo"]."</td>
                             <td>".$row["Email"]."</td>
-                            <td>".$row["MobileNo"]."</td>
-                            <td>".$row["Address"]."</td>
-                            <td>".$row["UserType"]."</td>
-                        </tr>";
+                            <td>".$row["BookReq"]."</td>
+                            </tr>";
                         }
                         }
                         else{

@@ -69,13 +69,13 @@
             <td style="width: 10%;">
                 <div class="addminPanel">
                     <ul>
-                        <li><a href="../php/Category.php">Category</a></li>
-                        <li><a href=../php/Publisher.php>Publisher</a></li>
+                    <li><a href="../php/Category.php">Category</a></li>
+                        <li><a href="../php/Publisher.php">Publisher</a></li>
                         <li><a href="../php/Author.php">Author</a></li>
                         <li><a href="../php/Books.php">Books</a></li>
-                        <li><a href="#about">Client Management</a></li>
-                        <li><a href="#about">Messeges</a></li>
-                        <li><a href="#about">Req Book</a></li>
+                        <li><a href="../php/Client.php">Client Management</a></li>
+                        <li><a href="../php/ClientMsg.php">Messeges</a></li>
+                        <li><a href="../php/Requestbook.php">Book Request</a></li>
                     </ul>
                 </div>                
             </td>
@@ -108,7 +108,7 @@
                             echo"<tr>
                             <td><a class='addButton' id=deleteCategory href='editBoooks.php?
                             id=$row[Id]&cid=$row[BookCategoryId]&tid=$row[BookTitle]&isbn=$row[ISBN]&pr=$row[Price]&atr=$row[AuthorId]&pid=$row[PublisherId]&qty=$row[AvailableQty]&bimg=$row[BookImage]'>Edit</a>
-                            <a class='delButton' id=deleteCategory href='BookDelete.php?re=$row[Id]'>Delete</a></td>                            
+                            <a class='delButton' id=deleteCategory href='BookDelete.php?id=$row[Id]'>Delete</a></td>                            
                             <td>".$row["Id"]."</td>
                             <td>".$row["BookCategoryId"]."</td>
                             <td>".$row["BookTitle"]."</td>

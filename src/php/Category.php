@@ -69,13 +69,13 @@
             <td style="width: 10%;">
                 <div class="addminPanel">
                     <ul>
-                        <li><a href="../php/Category.php">Category</a></li>
+                    <li><a href="../php/Category.php">Category</a></li>
                         <li><a href="../php/Publisher.php">Publisher</a></li>
                         <li><a href="../php/Author.php">Author</a></li>
                         <li><a href="../php/Books.php">Books</a></li>
-                        <li><a href="#about">Client Management</a></li>
-                        <li><a href="#about">Messeges</a></li>
-                        <li><a href="#about">Req Book</a></li>
+                        <li><a href="../php/Client.php">Client Management</a></li>
+                        <li><a href="../php/ClientMsg.php">Messeges</a></li>
+                        <li><a href="../php/Requestbook.php">Book Request</a></li>
                     </ul>
                 </div>                
             </td>

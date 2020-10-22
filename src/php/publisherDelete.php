@@ -12,12 +12,12 @@ $sql = "DELETE FROM  publisher  WHERE Id = $pDelete"; // delete query
 
         if(mysqli_query($conn,$sql)){
 
-            echo"<script> alertt ('Record Insert Successfully!!!')</script>";
+            echo"<script> alert ('Category Delete Successfully!!!')</script>";
             header("Location:Publisher.php");
         }
         else{
 
-            echo"<script> alertt ('Error in insert in record')</script>";
+            echo"<script> alert ('Delete fail')</script>";
         }
         mysqli_close($conn);
 ?>
