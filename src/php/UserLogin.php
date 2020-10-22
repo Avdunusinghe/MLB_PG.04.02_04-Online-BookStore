@@ -65,7 +65,7 @@
     <center> 
           <div class="adloinbox">
             <h1>User Login</h1>
-              <from  class="adloinbox" action="" target="_self" method="POST">
+              <from  class="adloinbox" action="UserLogin.php" target="_self" method="POST">
 
                   <div class="adtextbox">
                     <div class="adbordercolor">
@@ -108,14 +108,14 @@
           </div>
     </center> 
     <?php
-      include 'config.php'; 
       if(isset($_POST["submit"])){  
   
         if(!empty($_POST['userEmail']) && !empty($_POST['userPass'])) {  
             $user=$_POST['userEmail'];  
             $pass=$_POST['userPass'];  
           
-            
+            $con=mysql_connect('localhost','root','') or die(mysql_error());  
+            mysql_select_db('onlinebookstore') or die("cannot find online BookSotre");  
           
             $slq = mysql_query("SELECT * FROM users WHERE Email='".$user."' AND Password='".$pass."'");  
             $numrows=mysql_num_rows($slq);  
