@@ -9,7 +9,7 @@
 #s_2sfieldset {
     border-width:3px ;
     float:left; 
-    width: 60%;
+    width: 55%;
    
 }
 
@@ -18,13 +18,13 @@
     float:right;
     width: 38% ; 
     margin-left: 10px;
-    height: 650px;
+    height: 100%;
 }
 
 #s_4sfieldset {
      border-width:3px ;
      float:left;
-     width: 60%;
+     width: 55%;
      margin-top: 10px;
      
 }
