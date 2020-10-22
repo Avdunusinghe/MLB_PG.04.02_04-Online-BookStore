@@ -75,7 +75,7 @@
                 <form method="POST" action="addAuthor.php">
 
                     <label>Id<label> <br>
-                    <input type="text" name="id" readonly name="id"value="<?php echo $_REQUEST['re']?>" style="width: 270px;height:30px;"> <br>
+                    <input type="text" name="id" readonly name="id"value="<?php echo $_REQUEST['id']?>" style="width: 270px;height:30px;"> <br>
 
                     <lebel>Enter Author's Name</lebel> 
                     <input type="text" name="bookAuthorName"  value="<?php echo $_REQUEST['aname']?>" style="width: 270px;height:30px;"><br><br>

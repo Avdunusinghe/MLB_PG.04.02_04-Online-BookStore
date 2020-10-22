@@ -98,8 +98,8 @@
 
                         while($row = $result->fetch_assoc()){
                             echo"<tr>
-                            <td><a class='addButton' id=deleteCategory href='editPublisher.php?re=$row[Id]&pname=$row[Name]'>Edit</a>
-                            <a class='delButton' id=deleteCategory href='publisherDelete.php?re=$row[Id]'>Delete</a></td>
+                            <td><a class='addButton' id=deleteCategory href='editPublisher.php?id=$row[Id]&pname=$row[Name]'>Edit</a>
+                            <a class='delButton' id=deleteCategory href='publisherDelete.php?id=$row[Id]'>Delete</a></td>
                             <td>".$row["Id"]."</td>
                             <td>".$row["Name"]."</td>
                             </tr>";

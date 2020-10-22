@@ -96,7 +96,7 @@
           <form method="POST" action="updateBooks.php">
 
               <label>Id<label> <br>
-              <input type="text" name="id" readonly name="id"value="<?php echo $_REQUEST['re']?>" style="width: 270px;height:30px;"> <br>            
+              <input type="text" name="id" readonly name="id"value="<?php echo $_REQUEST['id']?>" style="width: 270px;height:30px;"> <br>            
   
               <lebel>Enter Book Inventory Id</lebel> <br>
               <input type="text" name="bookInvetoryId"  value="<?php echo $_REQUEST['cid']?>"style="width: 270px;height:30px;" required><br><br>

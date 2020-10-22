@@ -2,7 +2,7 @@
 
 include_once 'config.php';
 //Books Table sql dbOperations
-$bookInventoryId = $_POST["bookInvetoryId"];
+$bookCategoryId = $_POST["bookInvetoryId"];
 $bookName = $_POST["bookName"];
 $bIsbn = $_POST["bookIsbn"];
 $bPrice = $_POST["bookPrice"];
@@ -12,7 +12,9 @@ $bQty = $_POST["bookQuntity"];
 $bImage = $_POST["bookImg"];
 
 $sql = "insert into books (Id, BookCategoryId, BookTitle, ISBN, Price, AuthorId, PublisherId, AvailableQty, BookImage,IsActive)
-VALUES('', $bookInventoryId, '$bookName', $bIsbn, $bPrice, $bAthorId, $bPublisherId, $bQty, '$bImage',TRUE)";
+VALUES('', $bookCategoryId, '$bookName', $bIsbn, $bPrice, $bAthorId, $bPublisherId, $bQty, '$bImage',TRUE)";
+
+
 
 if(mysqli_query($conn,$sql)){
 

@@ -2,9 +2,9 @@
 
 include 'config.php';
 
-$pDelete = $_GET['id']; // get id through query string
+$id = $_GET['re']; // get id through query string
 
-$sql = "DELETE FROM  publisher  WHERE Id = $pDelete"; // delete query
+$sql = "UPDATE Books SET IsActive = 0 WHERE Id = $id"; // delete query
 
 
 
@@ -13,7 +13,7 @@ $sql = "DELETE FROM  publisher  WHERE Id = $pDelete"; // delete query
         if(mysqli_query($conn,$sql)){
 
             echo"<script> alertt ('Record Insert Successfully!!!')</script>";
-            header("Location:Publisher.php");
+            header("Location:Books.php");
         }
         else{
 

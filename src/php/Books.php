@@ -97,7 +97,7 @@
                     </tr>
                       <?php
                         include 'config.php';
-                        $Sql = "select * from books";
+                        $Sql = "select * from books where IsActive = 1";
 
                         $result = $conn->query($Sql);
 
@@ -106,7 +106,8 @@
                         while($row = $result->fetch_assoc()){
                             echo"<tr>
                             <td><a class='addButton' id=deleteCategory href='editBoooks.php?
-                            re=$row[Id]&cid=$row[BookCategoryId]&tid=$row[BookTitle]&isbn=$row[ISBN]&pr=$row[Price]&atr=$row[AuthorId]&pid=$row[PublisherId]&qty=$row[AvailableQty]&bimg=$row[BookImage]'>Edit</a></td>                            
+                            id=$row[Id]&cid=$row[BookCategoryId]&tid=$row[BookTitle]&isbn=$row[ISBN]&pr=$row[Price]&atr=$row[AuthorId]&pid=$row[PublisherId]&qty=$row[AvailableQty]&bimg=$row[BookImage]'>Edit</a>
+                            <a class='delButton' id=deleteCategory href='BookDelete.php?re=$row[Id]'>Delete</a></td>                            
                             <td>".$row["Id"]."</td>
                             <td>".$row["BookCategoryId"]."</td>
                             <td>".$row["BookTitle"]."</td>
@@ -116,7 +117,7 @@
                             <td>".$row["PublisherId"]."</td>
                             <td>".$row["AvailableQty"]."</td>
                             <td>".$row["BookImage"]."</td>
-                            <td><a class='delButton' id=deleteCategory href='authorDelete.php?re=$row[Id]'>Delete</a></td>
+                    
                             </tr>";
                         }
                         }

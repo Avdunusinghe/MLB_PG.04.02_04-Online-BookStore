@@ -2,7 +2,7 @@
 
 include 'config.php';
 
-$catDelete = $_GET['re']; // get id through query string
+$catDelete = $_GET['id']; // get id through query string
 
 $sql = "DELETE FROM  bookcategory  WHERE Id = $catDelete"; // delete query
 
