@@ -14,7 +14,7 @@ $sql = "insert into requestbooks (ReqId ,Name, ContactNo, Email,BookReq) VALUES 
         if(mysqli_query($conn,$sql)){
 
             echo"<script> alert ('Record Insert Successfully!!!')</script>";
-            header("Location:../src/Home.html");
+            header("Location:../Home.html");
         }
         else{
 
