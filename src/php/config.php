@@ -12,7 +12,7 @@
  if ($conn->connect_error) { 
     die("Connection failed: " . $conn->connect_error); 
 } 
-//echo "Connected successfully"; 
-echo"<script> alertt ('Record Insert Successfully!!!')</script>";
+echo "Connected successfully"; 
+
 ?>
 

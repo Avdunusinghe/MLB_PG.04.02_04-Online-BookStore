@@ -117,8 +117,7 @@
                             <td>".$row["AuthorId"]."</td>
                             <td>".$row["PublisherId"]."</td>
                             <td>".$row["AvailableQty"]."</td>
-                            <td>".$row["BookImage"]."</td>
-                    
+                            <td>".$row["BookImage"]."</td>                    
                             </tr>";
                         }
                         }
