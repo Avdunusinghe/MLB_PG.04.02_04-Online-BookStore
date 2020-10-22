@@ -59,40 +59,53 @@
           </div>
         </nav>
 
+        <center>
+            <div class="clentMsg">
+                <table border="1" width=100%>
+                    <tr>
+                        <th>Messenge No</th>
+                        <th>Name</th>
+                        <th>Contact Number</th>
+                        <th>Email</th>
+                        <th>Messenge </th>
+                    </tr>
+                    <?php
+                        include 'config.php';
+                        $Sql = "select * from contactus";
+
+                        $result = $conn->query($Sql);
+
+                        if($result->num_rows>0){
+
+                          while($row = $result->fetch_assoc()){
+                               echo"<tr>
+                               <td>".$row["MsgId"]."</td>
+                               <td>".$row["Name"]."</td>
+                               <td>".$row["ContactNo"]."</td>
+                               <td>".$row["Email"]."</td>
+                               <td>".$row["Msg"]."</td>
+                               </tr>";
+                           }
+                        }
+                        else{
+                          echo"Result Not Found";
+                        }
+                        echo" </table>";
+                        $conn->close();
+                    ?>
+               
+            </div>
+
+      
+
+        </center>
 
 
-      <!--------------------------------end of header------------------------------------------->
-      <p class="pages-journey"><a href="../src/Home.html">Home</a>  >  Request books</p>
 
-      <center>
-          <h1>Request Books</h1>
-          <div class="sprqbook">
-             <form action ="reqbook.php" target="_self" method="POST" >
-                  <lebal>Your name</lebal><br><br>
-                  <input type="text" placeholder="Enter your name"style="width: 470px;height:40px;"id="spname" name="spname" required><br><br>
-
-                  <label>Contact Number</label><br><br>
-                  <input type="text" placeholder="Enter your Contact Number" style="width: 470px;height:40px;" id="sppnum" name="sppnum" required><br><br>
-
-                  <label>Email</label><br><br>
-                  <input type="text" placeholder="Enter your Email"style="width: 470px;height:40px;"id="spemail" name="spemail" pattern="[a-zA-Z0-9._%+-]+@[a-z]+\.+[a-z]{2,3}" required><br><br>
-
-                  <lebel>Books You are Looking for</lebel><br><br>
-                  <textarea style="width: 470px;height:40px;"id="spbdetails" name="spbdetails" required></textarea><br><br>
-
-                  
-                  <input class="spsubmitbtn" type="submit" name="" id="submit" value="Submit" onclick="validatRequestBookDetail();"><br><br>                    
-
-            </form>
-          </div>
-      </center>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-
-
-
-
-
+        
        <!--------------------------Footer below--------------------------------------> 
        <div class="footer">
         <div class="container">

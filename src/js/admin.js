@@ -120,3 +120,7 @@ function addPublisherValidate(){
 
 }
 }
+
+function addCategory() {
+  window.open("../src/addCategory.html");
+}

@@ -1,38 +1,28 @@
 <?php
 
-
+//include config file
 include 'config.php';
 
-
- $category=$_POST["bookCategoryName"];
-       
-       
-
-
-        $sql = "insert into bookcategory(Id,Category) VALUES('','$category')";
+ //eclare variables.
+ $category = $_POST["bookCategoryName"];
+   
+       $sql = "insert into bookcategory (Id, Category) VALUES ('', '$category')";
 
 
-        if($conn->query($sql)){
 
-            echo "insert successfully";
+
+
+
+        if(mysqli_query($conn,$sql)){
+
+            echo"<script> alert ('Record Insert Successfully!!!')</script>";
+            header("Location:Category.php");
         }
-        else {
-            echo "Error:".$conn->error;
+        else{
+
+            echo"<script> alert ('Error in insert in record')</script>";
         }
-
-        $conn->close();
-
-
-        /*if(mysqli_query($conn,$sql)){
-
-    echo"<script> alertt ('Record Insert Successfully!!!')</script>";
-    header("Location:Admin.html");
-}
-else{
-
-    echo"<script> alertt ('Error in insert in record')</script>";
-}
-mysqli_close($conn);*/
+        mysqli_close($conn);
 
 //Books Table sql dbOperations
 /*$bookInventoryId = $_POST["bookInvetoryId"];

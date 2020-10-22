@@ -7,9 +7,9 @@
         <title>Buybooks</title>
 
         <link rel="stylesheet" href="../src/Styles/style.css">
-        <link rel="stylesheet" href="../src/Styles/requestbook.css">
-
-        <script src="../src/js/requestbook.js"></script> 
+        <link rel="stylesheet" href="../src/Styles/admin.css">
+ 
+        <script src="../src/js/admin.js"></script>
     </head>
     <body>     
       <div id="container">
@@ -58,61 +58,53 @@
                   </div>  
           </div>
         </nav>
+         
+      </div>
+        
+    <h2 style="text-align: 30px left;">Welcome to Admin Panel</h2>
 
+    <center>
+      <div class="adbkupload">
+        <h2>Add New Authors</h2>
 
+        <form method="POST" action="../src/php/addAuthor.php">
 
-      <!--------------------------------end of header------------------------------------------->
-      <p class="pages-journey"><a href="../src/Home.html">Home</a>  >  Request books</p>
+            <lebel>Enter Author's Name</lebel> <br>
+            <input type="text" name="bookAuthorName" style="width: 270px;height:30px;"><br><br>
 
-      <center>
-          <h1>Request Books</h1>
-          <div class="sprqbook">
-             <form action ="reqbook.php" target="_self" method="POST" >
-                  <lebal>Your name</lebal><br><br>
-                  <input type="text" placeholder="Enter your name"style="width: 470px;height:40px;"id="spname" name="spname" required><br><br>
+            <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="addAuthorValidation()">
+            <input type="reset" class="adlgbtnReset" id="resetBookDetails" name="##" value="Reset"> <br><br>
+           
+        </form>
+      
+      </div>
+      
+    </center>
 
-                  <label>Contact Number</label><br><br>
-                  <input type="text" placeholder="Enter your Contact Number" style="width: 470px;height:40px;" id="sppnum" name="sppnum" required><br><br>
+    <hr>
 
-                  <label>Email</label><br><br>
-                  <input type="text" placeholder="Enter your Email"style="width: 470px;height:40px;"id="spemail" name="spemail" pattern="[a-zA-Z0-9._%+-]+@[a-z]+\.+[a-z]{2,3}" required><br><br>
+    
 
-                  <lebel>Books You are Looking for</lebel><br><br>
-                  <textarea style="width: 470px;height:40px;"id="spbdetails" name="spbdetails" required></textarea><br><br>
-
-                  
-                  <input class="spsubmitbtn" type="submit" name="" id="submit" value="Submit" onclick="validatRequestBookDetail();"><br><br>                    
-
-            </form>
-          </div>
-      </center>
-
-
-
-
-
-
-
-       <!--------------------------Footer below--------------------------------------> 
-       <div class="footer">
+     <!--------------------------Footer below--------------------------------------> 
+     <div class="footer">
         <div class="container">
           <div class="row-ft">
             <div class="footer-col1">
-              <p><b>More useful links</b></p>
+              <p>More: </p>
               <ul>
-                <li><a href="../src/Aboutus.html">About us</a></li>
-                <li><a href="../src/contactus.html">Contact is</a></li>
-                <li><a href="../src/requestbook.html">Request books</a></li>
-                <li><a href="../src/privacyPolicy.html">Privacy policy</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Abc</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">About us</a></li>
               </ul>
             </div>
             <div class="footer-col2">
-              <p><b>Follow us on- </b></p>
+              <p>More: </p>
               <ul>
-                <li><a href="#">FaceBook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instergram</a></li>
-                <li><a href="#">YouTube</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Abc</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">About us</a></li>
               </ul>
             </div>
             <div class="footer-col3">
@@ -136,3 +128,25 @@
 
   </body>
 </html>
+
+    
+   
+
+    
+      
+      
+    
+   
+    
+
+
+        
+
+
+
+
+
+
+
+
+       

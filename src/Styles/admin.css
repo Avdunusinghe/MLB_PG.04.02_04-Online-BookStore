@@ -1,12 +1,31 @@
-.adbkupload{
+/*.adbkupload{
     display:inline-block;
     text-align: left;
   }
   .adlgbtn1{
     text-decoration: none;
+    color:white;
+    background-color: black;
+    padding: 3px 10px;
+    font-size: medium;
+    font-weight: 100;  
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .adcheckMsg{
+    text-decoration: none;
     color:whitesmoke;
     background-color: black;
-    padding: 10px 50px;
+    padding: 3px 10px;
+    font-size: medium;
+    font-weight: 100;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+  .adlgbtnReset{
+    text-decoration: none;
+    color:whitesmoke;
+    background-color:red;
+    padding: 3px 10px;
     font-size: medium;
     font-weight: 100;  
     font-family: Arial, Helvetica, sans-serif;
@@ -16,4 +35,67 @@
     border: 6px solid black;
     border-radius: 3px;
     width: 50%;
+  }*/
+
+
+  .addminPanel ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+   }
+
+   .addminPanel a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  .addminPanel li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:black;
+    color: white;
+  }
+  .addButton{
+    text-decoration: none;
+    color:whitesmoke;
+    background-color:green;
+    padding: 2px 5px;
+    font-size: medium;
+    font-weight: 100;  
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .delButton{
+    text-decoration: none;
+    color:whitesmoke;
+    background-color:red;
+    padding: 2px 5px;
+    font-size: medium;
+    font-weight: 100;  
+    font-family: Arial, Helvetica, sans-serif;
+
   }
