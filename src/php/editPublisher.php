@@ -74,7 +74,7 @@
               <label>Id<label> 
               <input type="text" name="id" readonly name="id"value="<?php echo $_REQUEST['id']?>" style="width: 270px;height:30px;"> <br>
   
-              <labal>Enter the Publisher Name</lebel></Enter>
+              <labal>Enter the Publisher Name</lebel>
               <input type="text" name="bookPubName" value="<?php echo $_REQUEST['pname']?>" style="width: 270px;height:30px;"><br><br>
   
               <input class="adlgbtn1"  type="submit" name="" id="submit" value="Submit" onclick="addPublisherValidate()">

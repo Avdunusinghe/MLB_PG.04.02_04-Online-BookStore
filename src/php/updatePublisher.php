@@ -7,7 +7,7 @@
           $pName = $_POST["bookCategoryName"];
           
 
-          $sql = "UPDATE bookcategory SET Category='$pName' WHERE Id=$pid";
+          $sql = "UPDATE publisher SET Name='$pName' WHERE Id=$pid";
                     
          
 
