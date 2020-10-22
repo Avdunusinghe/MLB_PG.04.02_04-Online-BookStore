@@ -13,7 +13,7 @@ $sql = "UPDATE users SET IsActive = 0 WHERE Id = $id"; // delete query
         if(mysqli_query($conn,$sql)){
 
             echo"<script> alertt ('Record Insert Successfully!!!')</script>";
-            header("Location:Books.php");
+            header("Location:Client.php");
         }
         else{
 
