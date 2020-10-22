@@ -14,7 +14,7 @@
 			         $sql="insert into contactus(MsgId,Name,ContactNo,Email,Msg) VALUES ('','$name','$contactNo','$emailAdd','$msg')";
                 
                 // Check insert successfully or not.
-                        if($conn->query($sql)){
+                     /*   if($conn->query($sql)){
 							  echo " Inserted successfully";
 						}
 						else{
@@ -22,6 +22,18 @@
 						}
               
           //close the data base
-			  $conn->close(); 
+           $conn->close(); */
+           
+           if(mysqli_query($conn,$sql)){
+
+            echo"<script> alert('Athot Delete Successfully!!!')</script>";
+            header("Location:../contactus.html");
+        }
+        else{
+
+            echo"<script> alert('Books Table Use this Book')</script>";
+            header("Location:Author.php");
+        }
+        mysqli_close($conn);
 
 ?>
