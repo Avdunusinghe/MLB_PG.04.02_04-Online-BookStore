@@ -14,17 +14,18 @@
 
 			
 			
-		
-				//insert query
-			         $sql = "insert into users(Id,FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password,UserType,IsActive) VALUES('','$firstName','$lastName','$dob','$gender','$email','$contactNumber','$address','$password','Member',TRUE)";
-                        
-                 // Check insert successfully or not.
-                        if($conn->query($sql)){
-							  echo " Inserted successfully";
-						}
-						else{
-							echo "Error:". $conn->error;
-						}
+		 // Check insert successfully or not.
+               if($conn->query($sql)){
+                     echo"<script> alert('Account created successfully')</script>";      
+                     header("Location:../createaccount.html");
+                 
+                 }
+              else{
+                     
+                     echo"<script> alert('Error')</script>";
+                     header("Location:../createaccount.html");
+                 
+                 }
               
           //close the data base
 			  $conn->close(); 

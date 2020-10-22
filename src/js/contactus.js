@@ -16,11 +16,11 @@ function validateContactUsDetails(){
         alert("Enter your email");
         return false;
     }
-    if(message == null || email ==""){
+    if(message == null || message ==""){
         alert("Enter your message");
         return false;
     }
     else{
-        alert("Submit your Message");
+        alert("Message Submitted successfully!!");
     }
 }
