@@ -2,9 +2,9 @@
 
 include 'config.php';
 
-$id = $_GET['id']; // get id through query string
+$id = $_GET['it']; // get id through query string
 
-$sql = "UPDATE Books SET IsActive = 0 WHERE Id = $id"; // delete query
+$sql = "UPDATE users SET IsActive = 0 WHERE Id = $id"; // delete query
 
 
 

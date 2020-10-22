@@ -73,6 +73,7 @@
                         <li><a href="../php/Publisher.php">Publisher</a></li>
                         <li><a href="../php/Author.php">Author</a></li>
                         <li><a href="../php/Books.php">Books</a></li>
+                        <li><a href="#about">Client Management</a></li>
                         <li><a href="#about">Messeges</a></li>
                         <li><a href="#about">Req Book</a></li>
                     </ul>
@@ -83,14 +84,23 @@
                     <tr>
                         <th style="width:15%;">
                             
-                            <a class=addButton href="../addCategory.html">Add Category</a>
+                            <a class=addButton href="">Add Category</a>
                         </th>
                         <th style="width: 10%;">Id</th>
-                        <th style="width: 90%;">catrgory</th>
+                        <th style="width: 15%;">First Name</th>
+                        <th style="width: 15%;">LastName</th>
+                        <th style="width: 15%;">DOB</th>
+                        <th style="width: 15%;">Gender</th>
+                        <th style="width: 15%;">Email</th>
+                        <th style="width: 15%;">MobileNo</th>
+                        <th style="width: 15%;">Address</th>
+                        <th style="width: 15%;">UserType</th>
+
+                        
                     </tr>
                       <?php
                         include 'config.php';
-                        $Sql = "select * from bookcategory";
+                        $Sql = "select * from users where IsActive = 1";
 
                         $result = $conn->query($Sql);
 
@@ -98,11 +108,17 @@
 
                         while($row = $result->fetch_assoc()){
                             echo"<tr>
-                            <td><a class='addButton' id=deleteCategory href='editcategoryfr.php?id=$row[Id]&cname=$row[Category]'>Edit</a>
-                            <a class='delButton' id=deleteCategory href='CategoryDelete.php?id=$row[Id]'>Delete</a></td>
+                            <td><a class='delButton' id=deleteCategory href='userDelete.php?id=$row[Id]'>Delete</a></td>
                             <td>".$row["Id"]."</td>
-                            <td>".$row["Category"]."</td>
-                            </tr>";
+                            <td>".$row["FirstName"]."</td>
+                            <td>".$row["LastName"]."</td>
+                            <td>".$row["Dob"]."</td>
+                            <td>".$row["Gender"]."</td>
+                            <td>".$row["Email"]."</td>
+                            <td>".$row["MobileNo"]."</td>
+                            <td>".$row["Address"]."</td>
+                            <td>".$row["UserType"]."</td>
+                        </tr>";
                         }
                         }
                         else{
