@@ -14,7 +14,11 @@
 
 			
 			
-		 // Check insert successfully or not.
+		
+		//insert query
+		$sql = "insert into users(Id,FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password,UserType,IsActive) VALUES('','$firstName','$lastName','$dob','$gender','$email','$contactNumber','$address','$password','Member',TRUE)";
+                        
+              // Check insert successfully or not.
                if($conn->query($sql)){
                      echo"<script> alert('Account created successfully')</script>";      
                      header("Location:../createaccount.html");
