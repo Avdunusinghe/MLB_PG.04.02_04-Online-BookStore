@@ -81,7 +81,7 @@
                
                 
                 //selet query for read values from the data base
-                $sql = "select Id,FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password from users where Id =8";
+                $sql = "select Id,FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password from users where Id =9";
                 $result = $conn->query($sql);
                 
                 //read relevant row values
@@ -132,7 +132,7 @@
                    </a>";
             
             echo  "<a href='useraccountdelete.php? id= $userID'> 
-                           <button id='h_btn1' style='padding: 13px 540px;'>Delete</button>
+                           <button id='h_btn1' style='padding: 13px 500px;'>Delete Account</button>
                   </a>
                    <br><br><br><br><br><br>";
       ?>
