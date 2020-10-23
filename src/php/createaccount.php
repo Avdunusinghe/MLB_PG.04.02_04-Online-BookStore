@@ -20,7 +20,7 @@
                         
               // Check insert successfully or not.
                if($conn->query($sql)){
-                     echo"<script> alert('Account created successfully')</script>";      
+                       
                      header("Location:../createaccount.html");
                  
                  }

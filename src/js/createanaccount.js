@@ -8,7 +8,7 @@ function checkpassword(){
 	}
 	else{
 		
-		alert("Password are matched!!");
+		alert("Account created successfully!!");
 	    return true;
 		}
 }
