@@ -67,8 +67,9 @@
 
                 //conect to config.php .
                 include 'config.php';
+               
 
-                if(isset($_post["h_btn1"])){
+                if(isset($_POST["Update"])){
                      
                     $firstName=$_POST["h_fname"];
                     $lastName=$_POST["h_lname"];
@@ -81,19 +82,19 @@
                 
                     
                     
-                $sql= "UPDATE users SET
-                FirstName='$firstName',
-                LastName='$lastName',
-                Dob='$dob',
-                Gender='$gender',
-                Email='$email',
-                MobileNo='$contactNumbe',
-                Address='$address',
-                Password='$password'
-                WHERE Id =2";
+                $sql= "UPDATE users SET FirstName='$firstName',LastName='$lastName',Dob='$dob',Gender='$gender',Email='$email',MobileNo='$contactNumber',Address='$address',Password='$password' WHERE Id =9";
+
+                if ($conn->query($sql) === TRUE) {
+                    
+                    header("Location:useraccount.php");
+                 
+                  } 
                 
-                header("Location:useraccount.php");
-                 }
+                else {
+                    echo "Error updating record: " . $conn->error;
+                  }
+    
+                }
         ?>
 
 
@@ -163,8 +164,8 @@
                         </center>
             
                           
-                          <input type="reset"  id="h_btn2" name="h_btn2" value="Reset All"><br><br>
-                          <input type="submit" id="h_btn1" name="h_btn1" value="Update" style="padding: 13px 224px;"  >
+                         
+                          <input type="submit" id="h_btn1" name="Update" value="Update" style="padding: 13px 224px;"  >
                           
         
                 </form>
