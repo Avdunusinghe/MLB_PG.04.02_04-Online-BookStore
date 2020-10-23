@@ -65,12 +65,12 @@
     <center> 
           <div class="adloinbox">
             <h1>User Login</h1>
-              <from  class="adloinbox" action="#" target="_self" method="POST">
+              <from  class="adloinbox" action="../src/php/userLoginValidate.php"  method="POST">
 
                   <div class="adtextbox">
                     <div class="adbordercolor">
                       <leble>Email</leble> <br><br>
-                       <input type="email"  placeholder="Email" id="adusername" name="" value="" style="width: 470px;height:40px;" > <br> <br>
+                       <input type="email"  placeholder="Email" id="adusername" name="userEmail" value="" style="width: 470px;height:40px;" > <br> <br>
                        <div style="display:none" id="adlUsernameValidator">
                          <label id="adlEmailValidation" style="color: red;"><span >&#10006;</span>Invalid email format</label><br><br>
                        </div>
@@ -78,7 +78,7 @@
 
                   <div class="adtextbox">
                       <lebel>Password</lebel><br><br>
-                      <input type="password" placeholder="Password" id="adpassword" name=""  value="" style="width: 470px;height:40px;" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required><br><br>
+                      <input type="password" placeholder="Password" id="adpassword" name="userPass"  value="" style="width: 470px;height:40px;" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required><br><br>
                    </div>
                     </div>
                        
@@ -87,7 +87,7 @@
                    </div> 
 
                   <div class="adlgbtn">
-                      <input class="adlgbtn1"  type="button" name="" id="submit" value="Login" onclick="validateLogin()"><br><br>
+                      <input class="adlgbtn1"  type="submit" name="submit" id="submit" value="Login" onclick="validateLogin()"><br><br>
                      <a href="../src/createaccount.html">Sign Up</a>
                   </div>
                     <br><br>
