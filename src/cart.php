@@ -19,12 +19,12 @@ session_start();
       <div id="container">
         <nav>
         <div id="adsize">
-          <a href="../src/Home.html" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../src/Images/BuyBooks Logo.png" width="250" height="100"></a>
+          <a href="../src/Home.php" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../src/Images/BuyBooks Logo.png" width="250" height="100"></a>
         </div>
         
         <div class ="adhover" style =" position:absolute; left:610px; top:100px;">
           <ul>
-            <li><a href="../src/Home.html">Home</a></li>
+            <li><a href="../src/Home.php">Home</a></li>
             <li><a href="#">Books<span>&#9661;</span></a>
             <!-- First Tier Drop Down -->
             <ul>
@@ -48,8 +48,21 @@ session_start();
             <li><a href="#">About</a></li>
           </ul>
         </div>
-        
-          <a href=""class="loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in|Sign Up</a>
+        <?php 
+            if($_SESSION['username'])
+            {
+              echo '<a href="logOut.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Logout</a>';
+              $id= $_SESSION['id'];
+              echo '<a class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;" href="php/useraccount.php?id=' . urlencode($id) . '">User Profile</a>';
+            }
+            else
+            {
+             echo '<a href="../src/loginpage.html" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in |</a>';
+             echo '<a href="../src/createaccount.html" class= "adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>';
+            }
+
+            ?>
+         
             
 
         <div class="cart"style = "float:right;position:relative;left:200px;top:10px;">

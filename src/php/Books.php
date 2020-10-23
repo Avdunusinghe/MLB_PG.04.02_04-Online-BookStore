@@ -18,12 +18,12 @@
        <div id="container">
          <nav>
            <div id="adsize">
-             <a href="../Home.html" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../Images/BuyBooks Logo.png" width="250" height="100"></a>
+             <a href="../Home.php" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../Images/BuyBooks Logo.png" width="250" height="100"></a>
            </div>
          
              <div class ="adhover" style =" position:absolute; left:610px; top:100px;">
                <ul>
-                   <li><a href="../src/Home.html">Home</a></li>
+                   <li><a href="../src/Home.php">Home</a></li>
                    <li><a href="#">Books <span>&#9661;</span></a>
                    <!-- First Tier Drop Down -->
                  <ul>
@@ -36,9 +36,8 @@
                    <li><a href="#">Parallel Computing</a></li>
                  </ul >        
                  </li>
-                   <li><a href="../src/magazines.html">Magazines</a></li>
-                   <li><a href="../src/requestbook.html">Request books</a></li>
-                   <li><a href="../src/Aboutus.html">About Us</a></li>
+                   <li><a href="../src/requestbook.php">Request books</a></li>
+                   <li><a href="../src/Aboutus.php">About Us</a></li>
                </ul>
              </div>
  

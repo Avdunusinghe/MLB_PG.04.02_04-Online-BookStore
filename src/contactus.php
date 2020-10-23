@@ -39,6 +39,8 @@ session_start();
                 </ul >        
                 </li>
                   <li><a href="../src/requestbook.html">Request books</a></li>
+                  <li><a href="../src/contactus.php">Contact Us</a></li>
+                  <li><a href="../src/Aboutus.html">About Us</a></li>
                   <?php 
                       if($_SESSION['usertype']== "Admin")
                       {
@@ -46,14 +48,15 @@ session_start();
                           
                       }
                   ?>
-                  <li><a href="../src/Aboutus.html">About Us</a></li>
+                  
               </ul>
             </div>
             <?php 
             if($_SESSION['username'])
             {
               echo '<a href="logOut.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Logout</a>';
-             
+              $id= $_SESSION['id'];
+              echo '<a class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;" href="php/useraccount.php?id=' . urlencode($id) . '">User Profile</a>';
             }
             else
             {

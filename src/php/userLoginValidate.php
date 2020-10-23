@@ -3,6 +3,7 @@ session_start();
     include 'config.php';
     if (!empty($_POST)){
 
+        //asign values
         $Email = $_POST['userEmail'];
         $Password = $_POST['userPass'];
         $Id = 0;
@@ -11,8 +12,10 @@ session_start();
     
 
         
-    
+        //user input select query and  prepare statment  use to execute the same (or similar) SQL statements repeatedly with high efficiency.
         $stmt = $conn->prepare("SELECT Id, Email, Password, IsActive, UserType FROM users WHERE Email=? AND Password=? LIMIT 1");
+
+        // this func
         $stmt->bind_param('ss', $Email, $Password);
         $stmt->execute();
         $stmt->bind_result($Id , $username, $Password, $IsActive,$UserType);
@@ -36,7 +39,9 @@ session_start();
     
         }
         else {
-            echo "INVALID USERNAME/PASSWORD Combination!";
+        
+            //user password not correct go again login page
+            header("Location:../loginpage.php");
         }
         $stmt->close();
     }

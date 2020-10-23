@@ -1,4 +1,5 @@
 <?php
+//session start
 session_start();
 ?>
 <!DOCTYPE html>
@@ -28,13 +29,13 @@ session_start();
                   <li><a href="../src/CategoriesSubPage1.html">Books <span>&#9661;</span></a>
                   <!-- First Tier Drop Down -->
                 <ul>
-                  <li><a href="#">Information Technology</a></li>
-                  <li><a href="#">Software Engineering</a></li>
-                  <li><a href="#">Machine Learning</a></li>
-                  <li><a href="#">Enterprise Application Development</a></li>
-                  <li><a href="#">Mobile Application Design & Development</a></li>
-                  <li><a href="#">Deep Learning</a></li>
-                  <li><a href="#">Parallel Computing</a></li>
+                  <li><a href="">Information Technology</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Software Engineering</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Machine Learning</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Enterprise Application Development</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Mobile Application Design & Development</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Deep Learning</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Parallel Computing</a></li>
                 </ul >        
                 </li>
                   
@@ -59,7 +60,7 @@ session_start();
             {
 
               echo '<a href="logOut.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Logout</a>';
-              
+
               $id= $_SESSION['id'];
               echo '<a class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;" href="php/useraccount.php?id=' . urlencode($id) . '">User Profile</a>';
 

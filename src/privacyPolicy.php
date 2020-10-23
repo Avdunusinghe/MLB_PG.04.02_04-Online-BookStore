@@ -24,7 +24,7 @@ session_start();
             <div class ="adhover" style =" position:absolute; left:610px; top:100px;">
               <ul>
                   <li><a href="../src/Home.php">Home</a></li>
-                  <li><a href="../src/CategoriesSubPage1.html">Books <span>&#9661;</span></a>
+                  <li><a href="">Books <span>&#9661;</span></a>
                   <!-- First Tier Drop Down -->
                 <ul>
                   <li><a href="#">Information Technology</a></li>
@@ -57,7 +57,8 @@ session_start();
             if($_SESSION['username'])
             {
               echo '<a href="logOut.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Logout</a>';
-              echo '<a href="php/useraccount.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">User Profile</a>';
+              $id= $_SESSION['id'];
+              echo '<a class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;" href="php/useraccount.php?id=' . urlencode($id) . '">User Profile</a>';
             }
             else
             {
