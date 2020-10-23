@@ -11,13 +11,16 @@ $bPublisherId = $_POST["bookPublisherId"];
 $bQty = $_POST["bookQuntity"];
 $bImage = $_POST["bookImg"];
 
+// insert data to book table query
+
 $sql = "insert into books (Id, BookCategoryId, BookTitle, ISBN, Price, AuthorId, PublisherId, AvailableQty, BookImage,IsActive)
 VALUES('', $bookCategoryId, '$bookName', $bIsbn, $bPrice, $bAthorId, $bPublisherId, $bQty, '$bImage',TRUE)";
 
 
-
+//check query
 if(mysqli_query($conn,$sql)){
 
+    
     echo"<script> alert ('Record Insert Successfully!!!')</script>";
     header("Location:Books.php");
 }

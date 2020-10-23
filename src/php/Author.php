@@ -90,13 +90,21 @@
                         <th style="width: 90%;">Name</th>
                     </tr>
                       <?php
+                        // include coonfig file
+
                         include 'config.php';
+
+                        // show details author tavle using select query
+
                         $Sql = "select * from author";
 
+                        //check query 
                         $result = $conn->query($Sql);
 
+                        // returns the number of rows in a result set.
                         if($result->num_rows>0){
-
+                        
+                        //function fetches a result row as an associative array.
                         while($row = $result->fetch_assoc()){
                             echo"<tr>
                             <td><a class='addButton' id=deleteCategory href='editauthor.php?id=$row[Id]&aname=$row[Name]'>Edit</a>
@@ -107,8 +115,11 @@
                         }
                         }
                         else{
+
                         echo"Result Not Found";
+
                         }
+                        
                         echo" </table>";
                         $conn->close();
                      ?> 

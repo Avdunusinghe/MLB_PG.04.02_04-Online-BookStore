@@ -1,8 +1,10 @@
 <?php
 
+
 include 'config.php';
 
-$id = $_GET['id']; // get id through query string
+// get id through query string
+$id = $_GET['id']; 
 
 $sql = "UPDATE Books SET IsActive = 0 WHERE Id = $id"; // delete query
 

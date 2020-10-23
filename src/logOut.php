@@ -1,6 +1,6 @@
 <?php  
 
-session_start();//session is a way to store information (in variables) to be used across multiple pages.  
+session_start();//session is a comming  store information (in variables) to  use go many pages.  
 session_destroy();  
-header("Location:loginpage.html");//use for the redirection to some page  
+header("Location:loginpage.html");//use for the goto to login page 
 ?>  

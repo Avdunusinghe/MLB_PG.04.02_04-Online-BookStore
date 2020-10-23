@@ -6,6 +6,7 @@ include 'config.php';
  //eclare variables.
  $publisher = $_POST["bookPubName"];    
 
+        //insert publisher query 
        $sql = "insert into publisher (Id, Name) VALUES ('','$publisher')";
 
        if(mysqli_query($conn,$sql)){
@@ -17,6 +18,7 @@ include 'config.php';
 
         echo"<script> alert('Error in insert in record')</script>";
     }
+    //close connection
     mysqli_close($conn);
 
 ?>

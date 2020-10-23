@@ -1,10 +1,11 @@
 <?php
-
+// get id through query string
 include 'config.php';
+// assign author table id
+$aDelete = $_GET['id']; 
 
-$aDelete = $_GET['id']; // get id through query string
-
-$sql = "DELETE FROM  author  WHERE Id = $aDelete"; // delete query
+// delete query
+$sql = "DELETE FROM  author  WHERE Id = $aDelete"; 
 
 
 
