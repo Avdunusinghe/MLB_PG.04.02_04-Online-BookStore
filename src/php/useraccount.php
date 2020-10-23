@@ -81,22 +81,21 @@
                
                 
                 //selet query for read values from the data base
-                $sql = "select FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password from users where Id =9";
+                $sql = "select Id,FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password from users where Id =9";
                 $result = $conn->query($sql);
                 
-                //read each row
+                //read relevant row values
                 while($row= mysqli_fetch_array($result))
-                {
-                      $fName =$row['FirstName'];
+                {      
+                      $userID = $row["Id"];
+                      $fName =$row["FirstName"];
                       $lName=$row["LastName"];
                       $dob=$row["Dob"];
                       $gender=$row["Gender"];
                       $email=$row["Email"];
                       $contactNumber=$row["MobileNo"];
                       $address=$row["Address"];
-                      
-
-                }
+                 }
 
                     echo    "<table border='2' width='75%' >
                             <tr>
@@ -125,30 +124,23 @@
                             </tr>
                             </table>";
 
-        ?>
+       
         
-        <form   action="useraccountupdate.php" target="_self" method="POST" >
-        <input type="submit" id="h_btn1"  value="Edit" style="padding: 13px 540px;"  >
-        </form>
-
-        <br><br><br><br><br><br>
+            // when click the Edit button conect with useraccountupdate.php and send the ID using url 
+            echo "<a href='useraccountupdate.php? id= $userID'> 
+                           <button id='h_btn1' style='padding: 13px 540px;'>Edit</button>
+                   </a>";
+            
+            echo  "<a href='useraccountdelete.php? id= $userID'> 
+                           <button id='h_btn1' style='padding: 13px 500px;'>Delete Account</button>
+                  </a>
+                   <br><br><br><br><br><br>";
+      ?>
     
     </center>
           
          
                
-               
-
-                            
-   
-                     
-           
-        
-          
-
-      
-
-
       <!--------------------------Footer below--------------------------------------> 
       <div class="footer">
         <div class="container">

@@ -67,10 +67,16 @@
 
                 //conect to config.php .
                 include 'config.php';
+                
                
-
-                if(isset($_POST["Update"])){
-                     
+               
+                //check whether press submit button
+                if(isset($_POST["Update_btn"])){
+                    
+                    //this id value is come form this php file's form and it is the one which pointed to Update query , where condition
+                    $id= $_POST["id"]; 
+                    
+                    
                     $firstName=$_POST["h_fname"];
                     $lastName=$_POST["h_lname"];
                     $dob=$_POST["h_dob"];
@@ -81,11 +87,12 @@
                     $password=$_POST["h_rpwd"];
                 
                     
-                    
-                $sql= "UPDATE users SET FirstName='$firstName',LastName='$lastName',Dob='$dob',Gender='$gender',Email='$email',MobileNo='$contactNumber',Address='$address',Password='$password' WHERE Id =9";
-
+                //Update query for update user values    
+                $sql= "UPDATE users SET FirstName='$firstName',LastName='$lastName',Dob='$dob',Gender='$gender',Email='$email',MobileNo='$contactNumber',Address='$address',Password='$password' WHERE Id = $id";
+                
+                //check update success or not
                 if ($conn->query($sql) === TRUE) {
-                    
+                    //back to the relevant location.
                     header("Location:useraccount.php");
                  
                   } 
@@ -99,11 +106,21 @@
 
 
         <?php
+                // receive what sent useraccount Edit button url
+                $user_id = $_GET['id'];
+
+
                 //selet query for read values from the data base
+<<<<<<< HEAD
                 $sql = "select  FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password from users where Id =2";
+=======
+                $sql = "select FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password from users where Id = $user_id";
+>>>>>>> ee6ca67233e1c1469b12ce48d9329c120d6337c8
                 $result = $conn->query($sql);
+
+               
                 
-                //read each row
+                //read relevant row
                 while($row= mysqli_fetch_array($result))
                 {
                       $fName =$row['FirstName'];
@@ -163,19 +180,14 @@
                             <a class="acolor1 acolor2 acolor3" href="../loginpage.html" >ALREADY HAVE AN ACCOUNT</a><br> <br> 
                         </center>
             
+                          <!--this hidden text box does not show enything but it send id value to update query -->
+                          <input type="hidden" name="id" value=<?php echo $_GET['id'];?>>
                           
-                         
-                          <input type="submit" id="h_btn1" name="Update" value="Update" style="padding: 13px 224px;"  >
+                          <input type="submit" id="h_btn1" name="Update_btn" value="Update" style="padding: 13px 224px;"  >
                           
         
                 </form>
 
-               
-
-                            
-   
-                     
-           
           </div>
           </center>
 
