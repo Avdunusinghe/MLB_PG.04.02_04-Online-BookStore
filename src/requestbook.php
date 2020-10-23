@@ -12,19 +12,19 @@ session_start();
         <link rel="stylesheet" href="../src/Styles/style.css">
         <link rel="stylesheet" href="../src/Styles/requestbook.css">
 
-        <script src="../src/js/requestbook.js"></script> 
+        <script src="../src\js\slidShow.js"></script> 
     </head>
     <body>     
       <div id="container">
         <nav>
           <div id="adsize">
-            <a href="../src/Home.html" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../src/Images/BuyBooks Logo.png" width="250" height="100"></a>
+            <a href="../src/Home.php" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../src/Images/BuyBooks Logo.png" width="250" height="100"></a>
           </div>
         
             <div class ="adhover" style =" position:absolute; left:610px; top:100px;">
               <ul>
-                  <li><a href="../src/Home.html">Home</a></li>
-                  <li><a href="#">Books <span>&#9661;</span></a>
+                  <li><a href="../src/Home.php">Home</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Books <span>&#9661;</span></a>
                   <!-- First Tier Drop Down -->
                 <ul>
                   <li><a href="#">Information Technology</a></li>
@@ -36,7 +36,10 @@ session_start();
                   <li><a href="#">Parallel Computing</a></li>
                 </ul >        
                 </li>
-                  <li><a href="../src/requestbook.html">Request books</a></li>
+                  
+                  <li><a href="../src/requestbook.php">Request books</a></li>
+                  <li><a href="../src/contactus.php">Contact US</a></li>
+                  <li><a href="../src/Aboutus.php">About Us</a></li>
                   <?php 
                       if($_SESSION['usertype']== "Admin")
                       {
@@ -44,14 +47,17 @@ session_start();
                           
                       }
                   ?>
-                  <li><a href="../src/Aboutus.html">About Us</a></li>
+                 
               </ul>
             </div>
+
+
+
             <?php 
             if($_SESSION['username'])
             {
               echo '<a href="logOut.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Logout</a>';
-              echo '<a href="../src/createaccount.html" class= "adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>';  
+              echo '<a href="php/useraccount.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">User Profile</a>';
             }
             else
             {
@@ -61,13 +67,14 @@ session_start();
 
             ?>
 
+            
 
-              <a href="../src/loginpage.html"class="loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in |</a>
-              <a href="../src/createaccount.html"class="adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>
+
+
             
 
             <div class="cart"style = "float:right;position:relative;left:200px;top:-3px;">
-                <a href="../src/Home.html" class = "cart"><img src="../src/Images/Cart_1.png" alt="cart" width="35" height="40" style="color: white;"></a>
+                <a href="../src/cart.html" class = "cart"><img src="../src/Images/Cart_1.png" alt="cart" width="35" height="40" style="color: white;"></a>
                
             </div>
   
@@ -80,6 +87,8 @@ session_start();
                   </div>  
           </div>
         </nav>
+         
+      </div>
 
 
 
@@ -115,46 +124,46 @@ session_start();
 
 
 
-       <!--------------------------Footer below--------------------------------------> 
-       <div class="footer">
-        <div class="container">
-          <div class="row-ft">
-            <div class="footer-col1">
-              <p><b>More useful links</b></p>
-              <ul>
-                <li><a href="../src/Aboutus.html">About us</a></li>
-                <li><a href="../src/contactus.html">Contact is</a></li>
-                <li><a href="../src/requestbook.html">Request books</a></li>
-                <li><a href="../src/privacyPolicy.html">Privacy policy</a></li>
-              </ul>
+        <!--------------------------Footer below--------------------------------------> 
+        <div class="footer">
+          <div class="container">
+            <div class="row-ft">
+              <div class="footer-col1">
+                <p><b>More useful links</b></p>
+                <ul>
+                  <li><a href="../src/Aboutus.php">About us</a></li>
+                  <li><a href="../src/contactus.php">Contact is</a></li>
+                  <li><a href="../src/requestbook.php">Request books</a></li>
+                  <li><a href="../src/privacyPolicy.php">Privacy policy</a></li>
+                </ul>
+              </div>
+              <div class="footer-col2">
+                <p><b>Follow us on- </b></p>
+                <ul>
+                  <li><a href="#">FaceBook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instergram</a></li>
+                  <li><a href="#">YouTube</a></li>
+                </ul>
+              </div>
+              <div class="footer-col3">
+                <img src="../src/Images/BuyBooks Logo.png" alt="Error" height="90">
+                <h3>Contact us</h3>
+                <p>13A, Main street, <br>Colombo 06.<br>contact@buybooks.lk</p>
+              </div>
+              <div class="footer-col4">
+                <img src="../src/Images/app-store.png" alt="Error" width="120px">
+                <img src="../src/Images/play-store.png" alt="Error" width="120px">
+              </div>
             </div>
-            <div class="footer-col2">
-              <p><b>Follow us on- </b></p>
-              <ul>
-                <li><a href="#">FaceBook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instergram</a></li>
-                <li><a href="#">YouTube</a></li>
-              </ul>
-            </div>
-            <div class="footer-col3">
-              <img src="../src/Images/BuyBooks Logo.png" alt="Error" height="90">
-              <h3>Contact us</h3>
-              <p>13A, Main street, <br>Colombo 06.<br>contact@buybooks.lk</p>
-            </div>
-            <div class="footer-col4">
-              <img src="../src/Images/app-store.png" alt="Error" width="120px">
-              <img src="../src/Images/play-store.png" alt="Error" width="120px">
+            <hr width="100%">
+            <div class="last-ele">
+              <p>@All rights received.</p>
+              <img src="../src/Images/card-logos.png" alt="Error" height="30px">
             </div>
           </div>
-          <hr width="100%">
-          <div class="last-ele">
-            <p>@All rights received.</p>
-            <img src="../src/Images/card-logos.png" alt="Error" height="30px">
-          </div>
-        </div>
-      </div>     
-      <!----------------------Footer end--------------------------------->
+        </div>     
+        <!----------------------Footer end--------------------------------->
 
-  </body>
+    </body>
 </html>

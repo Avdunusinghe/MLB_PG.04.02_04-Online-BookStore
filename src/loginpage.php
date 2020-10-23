@@ -16,7 +16,7 @@
       <div id="container">
         <nav>
           <div id="adsize">
-            <a href="../src/Home.html" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../src/Images/BuyBooks Logo.png" width="250" height="100"></a>
+            <a href="../src/Home.php" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../src/Images/BuyBooks Logo.png" width="250" height="100"></a>
           </div>
         
             <div class ="adhover" style =" position:absolute; left:610px; top:100px;">
@@ -34,18 +34,19 @@
                   <li><a href="#">Parallel Computing</a></li>
                 </ul >        
                 </li>
-                  <li><a href="../src/requestbook.html">Request books</a></li>
-                  <li><a href="../src/Aboutus.html">About Us</a></li>
+                  <li><a href="../src/contactus.php">Contact us</a></li>
+                  <li><a href="../src/requestbook.php">Request books</a></li>
+                  <li><a href="../src/Aboutus.php">About Us</a></li>
               </ul>
             </div>
 
 
-              <a href="../src/loginpage.html"class="loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in |</a>
+              <a href="../src/loginpage.php"class="loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in |</a>
               <a href="../src/createaccount.html"class="adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>
             
 
             <div class="cart"style = "float:right;position:relative;left:200px;top:-3px;">
-                <a href="../src/Home.html" class = "cart"><img src="../src/Images/Cart_1.png" alt="cart" width="35" height="40" style="color: white;"></a>
+                <a href="../src/cart.php" class = "cart"><img src="../src/Images/Cart_1.png" alt="cart" width="35" height="40" style="color: white;"></a>
                
             </div>
   
@@ -59,7 +60,7 @@
           </div>
         </nav>
       <!-----------------------------End of header section---------------------------------->
-      <p class="pages-journey"><a href="../src/Home.html">Home</a>  >  Login</p>
+      <p class="pages-journey"><a href="../src/Home.php">Home</a>  >  Login</p>
 
       <?php
 
@@ -139,10 +140,10 @@
               <div class="footer-col1">
                 <p><b>More useful links</b></p>
                 <ul>
-                  <li><a href="../src/Aboutus.html">About us</a></li>
-                  <li><a href="../src/contactus.html">Contact is</a></li>
-                  <li><a href="../src/requestbook.html">Request books</a></li>
-                  <li><a href="../src/privacyPolicy.html">Privacy policy</a></li>
+                  <li><a href="../src/Aboutus.php">About us</a></li>
+                  <li><a href="../src/contactus.php">Contact is</a></li>
+                  <li><a href="../src/requestbook.php">Request books</a></li>
+                  <li><a href="../src/privacyPolicy.php">Privacy policy</a></li>
                 </ul>
               </div>
               <div class="footer-col2">

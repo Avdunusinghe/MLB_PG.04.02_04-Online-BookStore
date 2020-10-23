@@ -93,7 +93,7 @@
                 //check update success or not
                 if ($conn->query($sql) === TRUE) {
                     //back to the relevant location.
-                    header("Location:useraccount.php");
+                    header("Location:useraccount.php?id=$id");
                  
                   } 
                 

@@ -22,7 +22,7 @@
 						else{
                             
                             echo"<script> alert('Error')</script>";
-                            header("Location:../contactus.html");
+                            header("Location:../contactus.php");
                         
                         }
               

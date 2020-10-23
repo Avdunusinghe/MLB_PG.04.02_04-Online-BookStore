@@ -10,21 +10,21 @@ session_start();
         <title>Buybooks</title>
 
         <link rel="stylesheet" href="../src/Styles/style.css">
-        <link rel="stylesheet" href="../src/Styles/privacyPolicy.css">
+        <link rel="stylesheet" href="../src/Styles/CategoriesSubPages.css">
 
-        
+        <script src="../src\js\slidShow.js"></script> 
     </head>
     <body>     
       <div id="container">
         <nav>
           <div id="adsize">
-            <a href="../src/Home.html" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../src/Images/BuyBooks Logo.png" width="250" height="100"></a>
+            <a href="../src/Home.php" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../src/Images/BuyBooks Logo.png" width="250" height="100"></a>
           </div>
         
             <div class ="adhover" style =" position:absolute; left:610px; top:100px;">
               <ul>
-                  <li><a href="../src/Home.html">Home</a></li>
-                  <li><a href="#">Books <span>&#9661;</span></a>
+                  <li><a href="../src/Home.php">Home</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Books <span>&#9661;</span></a>
                   <!-- First Tier Drop Down -->
                 <ul>
                   <li><a href="#">Information Technology</a></li>
@@ -36,8 +36,10 @@ session_start();
                   <li><a href="#">Parallel Computing</a></li>
                 </ul >        
                 </li>
-
-                  <li><a href="../src/requestbook.html">Request books</a></li>
+                  
+                  <li><a href="../src/requestbook.php">Request books</a></li>
+                  <li><a href="../src/contactus.php">Contact US</a></li>
+                  <li><a href="../src/Aboutus.php">About Us</a></li>
                   <?php 
                       if($_SESSION['usertype']== "Admin")
                       {
@@ -45,14 +47,17 @@ session_start();
                           
                       }
                   ?>
-                  <li><a href="../src/Aboutus.html">About Us</a></li>
+                 
               </ul>
             </div>
+
+
+
             <?php 
             if($_SESSION['username'])
             {
               echo '<a href="logOut.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Logout</a>';
-              echo '<a href="../src/createaccount.html" class= "adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>';  
+              echo '<a href="php/useraccount.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">User Profile</a>';
             }
             else
             {
@@ -62,12 +67,14 @@ session_start();
 
             ?>
 
+            
 
-              
+
+
             
 
             <div class="cart"style = "float:right;position:relative;left:200px;top:-3px;">
-                <a href="../src/Home.html" class = "cart"><img src="../src/Images/Cart_1.png" alt="cart" width="35" height="40" style="color: white;"></a>
+                <a href="../src/cart.html" class = "cart"><img src="../src/Images/Cart_1.png" alt="cart" width="35" height="40" style="color: white;"></a>
                
             </div>
   
@@ -80,6 +87,8 @@ session_start();
                   </div>  
           </div>
         </nav>
+         
+      </div>
 
         <!----------------------End of header section--------------------------------->
         <p class="pages-journey"><a href="../src/Home.html">Home</a>  >  Privacy policy</p>
@@ -157,17 +166,17 @@ session_start();
         </div>
 
 
-        <!--------------------------Footer below--------------------------------------> 
-        <div class="footer">
+         <!--------------------------Footer below--------------------------------------> 
+         <div class="footer">
           <div class="container">
             <div class="row-ft">
               <div class="footer-col1">
                 <p><b>More useful links</b></p>
                 <ul>
-                  <li><a href="../src/Aboutus.html">About us</a></li>
-                  <li><a href="../src/contactus.html">Contact is</a></li>
-                  <li><a href="../src/requestbook.html">Request books</a></li>
-                  <li><a href="../src/privacyPolicy.html">Privacy policy</a></li>
+                  <li><a href="../src/Aboutus.php">About us</a></li>
+                  <li><a href="../src/contactus.php">Contact is</a></li>
+                  <li><a href="../src/requestbook.php">Request books</a></li>
+                  <li><a href="../src/privacyPolicy.php">Privacy policy</a></li>
                 </ul>
               </div>
               <div class="footer-col2">

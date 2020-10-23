@@ -78,11 +78,12 @@
                 //conect to config.php .
                 include 'config.php';
 
-                $user_id = $_GET['id'];
+                $id = $_GET['id'];
                 
                 //selet query for read values from the data base
-                $sql = "select Id,FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password from users where Id = $user_id";
+                $sql = "select Id,FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password from users where Id =$id";
                 $result = $conn->query($sql);
+               
               
                 
                 //read relevant row values
