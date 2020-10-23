@@ -68,7 +68,7 @@
                 //conect to config.php .
                 include 'config.php';
 
-                if(isset($_post['h_btn1'])){
+                if(isset($_post["h_btn1"])){
                      
                     $firstName=$_POST["h_fname"];
                     $lastName=$_POST["h_lname"];
@@ -81,13 +81,10 @@
                 
                     
                     
-                 $sql= "update users set FirstName='$firstName',LastName='$lastName',Dob='$dob',Gender='$gender',Email='$email',MobileNo='$contactNumbe',Address='$address',Password='$password' where Id =9";
-                $result = $conn->query($sql);
-
-                 
-
+                $sql= "update users set FirstName='$firstName',LastName='$lastName',Dob='$dob',Gender='$gender',Email='$email',MobileNo='$contactNumbe',Address='$address',Password='$password' where Id =9";
                 
-                }
+                header("Location:useraccount.php");
+                 }
         ?>
 
 
