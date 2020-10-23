@@ -44,5 +44,7 @@ session_start();
     {   
         echo "test"; 
     }
-    $conn->close(); 
+
+
+     $conn->close(); 
     ?>
