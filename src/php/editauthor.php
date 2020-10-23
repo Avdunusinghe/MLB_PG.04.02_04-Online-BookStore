@@ -72,7 +72,7 @@
             <div class="adbkupload">
                 <h2>Add New Authors</h2>
 
-                <form method="POST" action="addAuthor.php">
+                <form method="POST" action="updateAuthor.php">
 
                     <label>Id<label> <br>
                     <input type="text" name="id" readonly name="id"value="<?php echo $_REQUEST['id']?>" style="width: 270px;height:30px;"> <br>
