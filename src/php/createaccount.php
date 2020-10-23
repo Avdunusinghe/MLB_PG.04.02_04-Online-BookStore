@@ -21,7 +21,7 @@
               // Check insert successfully or not.
                if($conn->query($sql)){
                        
-                     header("Location:../createaccount.html");
+                     header("Location:../Home.php");
                  
                  }
               else{
