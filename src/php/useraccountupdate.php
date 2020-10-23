@@ -81,7 +81,16 @@
                 
                     
                     
-                $sql= "update users set FirstName='$firstName',LastName='$lastName',Dob='$dob',Gender='$gender',Email='$email',MobileNo='$contactNumbe',Address='$address',Password='$password' where Id =9";
+                $sql= "UPDATE users SET
+                FirstName='$firstName',
+                LastName='$lastName',
+                Dob='$dob',
+                Gender='$gender',
+                Email='$email',
+                MobileNo='$contactNumbe',
+                Address='$address',
+                Password='$password'
+                WHERE Id =2";
                 
                 header("Location:useraccount.php");
                  }
@@ -90,7 +99,7 @@
 
         <?php
                 //selet query for read values from the data base
-                $sql = "select FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password from users where Id =9";
+                $sql = "select  FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password from users where Id =2";
                 $result = $conn->query($sql);
                 
                 //read each row

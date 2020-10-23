@@ -62,53 +62,56 @@
       <!-----------------------------End of header section---------------------------------->
       <p class="pages-journey"><a href="../src/Home.html">Home</a>  >  Login</p>
 
-    <center> 
-          <div class="adloinbox">
-            <h1>User Login</h1>
-              <from  class="adloinbox" action="../src/php/userLoginValidate.php"  method="POST">
+      <center> 
+        
+          <h1>User Login</h1>
+       
 
-                  <div class="adtextbox">
-                    <div class="adbordercolor">
-                      <leble>Email</leble> <br><br>
-                       <input type="email"  placeholder="Email" id="adusername" name="userEmail" value="" style="width: 470px;height:40px;" > <br> <br>
-                       <div style="display:none" id="adlUsernameValidator">
-                         <label id="adlEmailValidation" style="color: red;"><span >&#10006;</span>Invalid email format</label><br><br>
-                       </div>
-                   </div>
 
-                  <div class="adtextbox">
-                      <lebel>Password</lebel><br><br>
-                      <input type="password" placeholder="Password" id="adpassword" name="userPass"  value="" style="width: 470px;height:40px;" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required><br><br>
-                   </div>
-                    </div>
-                       
-                   <div class="adpwcheckbox">
-                     <input type="checkbox" onclick="adShowPassword()">Show Password
-                   </div> 
 
-                  <div class="adlgbtn">
-                      <input class="adlgbtn1"  type="submit" name="submit" id="submit" value="Login" onclick="validateLogin()"><br><br>
-                     <a href="../src/createaccount.html">Sign Up</a>
-                  </div>
-                    <br><br>
-                    
-                         <a href="https://www.facebook.com/" class = "adfblogo"><img src="../src/Images/IMG_FBICON.png" alt="fblogo" width="230" height="33" ></a>
-                         <a href="https://mail.google.com/" class = "adgooglelogo"><img src="../src/Images/lMG_GOOGLE.png" alt="googlelogo" width="230" height="33" ></a> <br><br><br>
+          <form action="../src/php/userLoginValidate.php" method="post">
 
-                        
-                            
 
-                  <div class="adfopw">
-                       <center>
-                         <a href="../src/Fogotpassword.html">FORGOT PASSWORD ?</a><br> <br><br>
-                       </center>
-                  </div>
+            <div class="adtextbox adloinbox">
+              <label for="uname" ><b>Email</b></label><br><br>
+              <input type="text" placeholder="Enter Username" name="userEmail" id="adusername" style="width: 470px;height:40px;" required><br><br>
           
-              </from>
+              <label for="psw"><b>Password</b></label><br><br>
+              <input type="password" placeholder="Enter Password" name="userPass" id="adpassword" style="width: 470px;height:40px;"required><br><br>
+
+              <div class="adpwcheckbox">
+                <input type="checkbox" onclick="adShowPassword()">Show Password
+              </div> 
+                  
+              <button class="adlgbtn1" type="submit" onclick="validateLogin()">Login</button> <br><br>
+              <button class="adlgbtn1" type="submit" onclick="createAnAccountPage()">Sign up</button>
+
+          
+            </div>
+          
+          </form>
+
+          <br><br>
+            
+                 <a href="https://www.facebook.com/" class = "adfblogo"><img src="../src/Images/IMG_FBICON.png" alt="fblogo" width="230" height="33" ></a>
+                 <a href="https://mail.google.com/" class = "adgooglelogo"><img src="../src/Images/lMG_GOOGLE.png" alt="googlelogo" width="230" height="33" ></a> <br><br><br>
+
+                
+                    
+
+          <div class="adfopw">
+               <center>
+                 <a href="../src/Fogotpassword.html">FORGOT PASSWORD ?</a><br> <br><br>
+               </center>
           </div>
     </center> 
  
-    
+    <script>
+      // Create an account open js
+      function createAnAccountPage() {
+       window.open("../src/createaccount.html");
+      }
+    </script>
      
 
 

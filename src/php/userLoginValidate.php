@@ -1,38 +1,46 @@
 <?php
-    //include 'config.php';
-      if(isset($_POST["submit"])){  
-  
-        if(!empty($_POST['userEmail']) && !empty($_POST['userPass'])) {  
-            $user=$_POST['userEmail'];  
-            $pass=$_POST['userPass'];  
-            include 'config.php';
-            //$conn=mysql_connect("localhost","root","") or die(mysql_error());  
-            //mysql_select_db("onlinebookstore") or die("cannot find online BookSotre");  
-          
-            $sql = mysql_query("SELECT * FROM users WHERE Email='".$user."' AND Password='".$pass."'");  
-            $numrows=mysql_num_rows($sql);  
-            if($numrows!=0)  
-            {  
-            while($row=mysql_fetch_assoc($sql))  
-            {  
-            $dbusername=$row['Email'];  
-            $dbpassword=$row['Password'];  
-            }  
-          
-            if($user == $dbusername && $pass == $dbpassword)  
-            {  
-            session_start();  
-            $_SESSION['sess_user']=$user;  
-          
-            /* Redirect browser */  
-           // header("Location:../Home.html");  
-            }  
-            } else {  
-            echo "Invalid username or password!";  
-            }  
-          
-        } else {  
-            echo "All fields are required!";  
-        }  
-        }  
+session_start();
+    include 'config.php';
+    if (!empty($_POST)){
+
+        $Email = $_POST['userEmail'];
+        $Password = $_POST['userPass'];
+        $Id = 0;
+        $IsActive = 0;
+    
+
+        
+    
+        $stmt = $conn->prepare("SELECT Id, Email, Password, IsActive FROM users WHERE Email=? AND Password=? LIMIT 1");
+        $stmt->bind_param('ss', $Email, $Password);
+        $stmt->execute();
+        $stmt->bind_result($Id , $username, $Password, $IsActive);
+        $stmt->store_result();
+        if($stmt->num_rows == 1)  //To check if the row exists
+            {
+                if($stmt->fetch()) //fetching the contents of the row
+                {
+                   if ( $IsActive == 0) {
+                       echo "YOUR account has been DEACTIVATED.";
+                       exit();
+                   } else {
+                       $_SESSION['Logged'] = 1;
+                       $_SESSION['id'] = $Id;
+                       $_SESSION['username'] = $Email;
+                       header("Location:../Home.php");
+                       exit();
+                   }
+               }
+    
+        }
+        else {
+            echo "INVALID USERNAME/PASSWORD Combination!";
+        }
+        $stmt->close();
+    }
+    else 
+    {   
+        echo "test"; 
+    }
+    $conn->close(); 
     ?>
