@@ -45,7 +45,7 @@ session_start();
                           
                       }
                   ?>
-                  <li><a href="../src/Aboutus.html">About Us</a></li>
+                  <li><a href="../src/Aboutus.php">About Us</a></li>
               </ul>
             </div>
 
