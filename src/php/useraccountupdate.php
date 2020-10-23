@@ -111,11 +111,7 @@
 
 
                 //selet query for read values from the data base
-<<<<<<< HEAD
-                $sql = "select  FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password from users where Id =2";
-=======
                 $sql = "select FirstName,LastName,Dob,Gender,Email,MobileNo,Address,Password from users where Id = $user_id";
->>>>>>> ee6ca67233e1c1469b12ce48d9329c120d6337c8
                 $result = $conn->query($sql);
 
                

@@ -48,7 +48,7 @@ session_start();
             if($_SESSION['username'])
             {
               echo '<a href="logOut.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Logout</a>';
-            
+              echo '<a href="php/useraccount.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">User Profile</a>';
             }
             else
             {
