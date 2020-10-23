@@ -15,7 +15,7 @@ session_start();
         //user input select query and  prepare statment  use to execute the same (or similar) SQL statements repeatedly with high efficiency.
         $stmt = $conn->prepare("SELECT Id, Email, Password, IsActive, UserType FROM users WHERE Email=? AND Password=? LIMIT 1");
 
-        // this func
+        //This function binds the parameters to the SQL query and tells the database what the parameters are
         $stmt->bind_param('ss', $Email, $Password);
         $stmt->execute();
         $stmt->bind_result($Id , $username, $Password, $IsActive,$UserType);
