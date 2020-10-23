@@ -36,8 +36,15 @@ session_start();
                   <li><a href="#">Parallel Computing</a></li>
                 </ul >        
                 </li>
-                  <li><a href="../src/magazines.html">Magazines</a></li>
+                  
                   <li><a href="../src/requestbook.html">Request books</a></li>
+                  <?php 
+                      if($_SESSION['usertype']== "Admin")
+                      {
+                        echo '<li><a href="../src/php/Books.php">Admin</a></li>';
+                          
+                      }
+                  ?>
                   <li><a href="../src/Aboutus.html">About Us</a></li>
               </ul>
             </div>

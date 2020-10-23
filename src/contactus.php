@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,9 +10,11 @@
         <title>Buybooks</title>
 
         <link rel="stylesheet" href="../src/Styles/style.css">
-        <link rel="stylesheet" href="../src/Styles/requestbook.css">
+        
+        <link rel="stylesheet" href="../src/Styles/contactus.css">
 
-        <script src="../src/js/requestbook.js"></script> 
+        
+        <script src="../src/js/contactus.js"></script>
     </head>
     <body>     
       <div id="container">
@@ -33,15 +38,33 @@
                   <li><a href="#">Parallel Computing</a></li>
                 </ul >        
                 </li>
-                  <li><a href="../src/magazines.html">Magazines</a></li>
                   <li><a href="../src/requestbook.html">Request books</a></li>
+                  <?php 
+                      if($_SESSION['usertype']== "Admin")
+                      {
+                        echo '<li><a href="../src/php/Books.php">Admin</a></li>';
+                          
+                      }
+                  ?>
                   <li><a href="../src/Aboutus.html">About Us</a></li>
               </ul>
             </div>
+            <?php 
+            if($_SESSION['username'])
+            {
+              echo '<a href="logOut.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Logout</a>';
+             
+            }
+            else
+            {
+             echo '<a href="../src/loginpage.html" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in |</a>';
+             echo '<a href="../src/createaccount.html" class= "adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>';
+            }
+
+            ?>
 
 
-              <a href="../src/loginpage.html"class="loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in |</a>
-              <a href="../src/createaccount.html"class="adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>
+              
             
 
             <div class="cart"style = "float:right;position:relative;left:200px;top:-3px;">
@@ -58,43 +81,39 @@
                   </div>  
           </div>
         </nav>
-
-
-
-      <!--------------------------------end of header------------------------------------------->
-      <p class="pages-journey"><a href="../src/Home.html">Home</a>  >  Request books</p>
-
+         
+      </div>
+      <!----------------------End of header section--------------------------------->
+      <p class="pages-journey"><a href="../src/Home.html">Home</a>  >  Contact us</p>
+      <div class="contactus1_s"> 
       <center>
-          <h1>Request Books</h1>
-          <div class="sprqbook">
-             <form action ="../src/php/reqbook.php" target="_self" method="POST" >
-                  <lebal>Your name</lebal><br><br>
-                  <input type="text" placeholder="Enter your name"style="width: 470px;height:40px;"id="spname" name="spname" required><br><br>
+    
+        <h2>Contact Us</h2> 
+          <div class="contactus_s"> 
+          
+            <form   action="../src/php/contactus.php" target="_self" method="POST" >
+              <label>Name</label><br>
+              <input type="text" class="cdesign_s" id="snName" name="snName" ; placeholder="Enter your name here" required><br><br>
 
-                  <label>Contact Number</label><br><br>
-                  <input type="text" placeholder="Enter your Contact Number" style="width: 470px;height:40px;" id="sppnum" name="sppnum" required><br><br>
+              <label>Contact Number</label><br>
+              <input type="text" class="cdesign_s" name="snCnumber" id="snCnumber" pattern="[0-9]{10}" placeholder="Enter your contact number here" required><br><br>
 
-                  <label>Email</label><br><br>
-                  <input type="text" placeholder="Enter your Email"style="width: 470px;height:40px;"id="spemail" name="spemail" pattern="[a-zA-Z0-9._%+-]+@[a-z]+\.+[a-z]{2,3}" required><br><br>
+              <label>Email</label><br>
+              <input type="email" class="cdesign_s" name="snEmail" id="snEmail" pattern="[a-zA-Z0-9._%+-]+@[a-z]+\.+[a-z]{2,3}" placeholder="Enter your email here" required><br><br>
 
-                  <lebel>Books You are Looking for</lebel><br><br>
-                  <textarea style="width: 470px;height:40px;"id="spbdetails" name="spbdetails" required></textarea><br><br>
+              <label>Message</label><br>
+              <textarea input type="text" class="msdesign_s" name="snMsg" id="snMsg" rows="5" columns="25"></textarea><br><br>
 
-                  
-                  <input class="spsubmitbtn" type="submit" name="" id="submit" value="Submit" onclick="validatRequestBookDetail();"><br><br>                    
-
-            </form>
+              <input type="Submit" class="submit_s" name = "submit_s" value="Submit" onclick="validateContactUsDetails()">
+            </form>  
+    
           </div>
+      
       </center>
+      </div>
 
-
-
-
-
-
-
-       <!--------------------------Footer below--------------------------------------> 
-       <div class="footer">
+      <!--------------------------Footer below--------------------------------------> 
+      <div class="footer">
         <div class="container">
           <div class="row-ft">
             <div class="footer-col1">

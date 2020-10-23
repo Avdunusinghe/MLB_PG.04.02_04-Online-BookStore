@@ -7,14 +7,15 @@ session_start();
         $Password = $_POST['userPass'];
         $Id = 0;
         $IsActive = 0;
+        $UserType = "";
     
 
         
     
-        $stmt = $conn->prepare("SELECT Id, Email, Password, IsActive FROM users WHERE Email=? AND Password=? LIMIT 1");
+        $stmt = $conn->prepare("SELECT Id, Email, Password, IsActive, UserType FROM users WHERE Email=? AND Password=? LIMIT 1");
         $stmt->bind_param('ss', $Email, $Password);
         $stmt->execute();
-        $stmt->bind_result($Id , $username, $Password, $IsActive);
+        $stmt->bind_result($Id , $username, $Password, $IsActive,$UserType);
         $stmt->store_result();
         if($stmt->num_rows == 1)  //To check if the row exists
             {
@@ -27,6 +28,7 @@ session_start();
                        $_SESSION['Logged'] = 1;
                        $_SESSION['id'] = $Id;
                        $_SESSION['username'] = $Email;
+                       $_SESSION['usertype'] = $UserType;
                        header("Location:../Home.php");
                        exit();
                    }

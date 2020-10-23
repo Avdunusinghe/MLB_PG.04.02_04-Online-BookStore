@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -33,15 +36,33 @@
                   <li><a href="#">Parallel Computing</a></li>
                 </ul >        
                 </li>
-                  <li><a href="../src/magazines.html">Magazines</a></li>
+                  
                   <li><a href="../src/requestbook.html">Request books</a></li>
+                  <?php 
+                      if($_SESSION['usertype']== "Admin")
+                      {
+                        echo '<li><a href="../src/php/Books.php">Admin</a></li>';
+                          
+                      }
+                  ?>
+                  
                   <li><a href="../src/Aboutus.html">About Us</a></li>
               </ul>
             </div>
 
+            <?php 
+            if($_SESSION['username'])
+            {
+              echo '<a href="logOut.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Logout</a>';
+              echo '<a href="../src/createaccount.html" class= "adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>';  
+            }
+            else
+            {
+             echo '<a href="../src/loginpage.html" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in |</a>';
+             echo '<a href="../src/createaccount.html" class= "adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>';
+            }
 
-              <a href="../src/loginpage.html"class="loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in |</a>
-              <a href="../src/createaccount.html"class="adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>
+            ?>
             
 
             <div class="cart"style = "float:right;position:relative;left:200px;top:-3px;">

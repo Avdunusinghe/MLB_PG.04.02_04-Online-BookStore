@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -33,12 +36,19 @@
 				    	<li><a href="#">Deep Learning</a></li>
 				    	<li><a href="#">Parallel Computing</a></li>
             </ul >        
-            </li>
-            <li><a href="#">Magazines</a></li>
+            </li>            
             <li><a href="#">Request books</a></li>
+            <?php 
+                      if($_SESSION['usertype']== "Admin")
+                      {
+                        echo '<li><a href="../src/php/Books.php">Admin</a></li>';
+                          
+                      }
+                  ?>
             <li><a href="#">About</a></li>
           </ul>
         </div>
+        
           <a href=""class="loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in|Sign Up</a>
             
 

@@ -34,7 +34,6 @@
                   <li><a href="#">Parallel Computing</a></li>
                 </ul >        
                 </li>
-                  <li><a href="../src/magazines.html">Magazines</a></li>
                   <li><a href="../src/requestbook.html">Request books</a></li>
                   <li><a href="../src/Aboutus.html">About Us</a></li>
               </ul>
