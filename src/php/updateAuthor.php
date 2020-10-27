@@ -2,7 +2,7 @@
 
           include 'config.php';
 
-         
+         //sql part author
           $aid=$_POST["id"];
           $aName = $_POST["bookAuthorName"];
           

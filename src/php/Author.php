@@ -129,7 +129,7 @@
                         //check query 
                         $result = $conn->query($Sql);
 
-                        // returns the number of rows in a result set.
+                        //returns the number of rows in a result set.
                         if($result->num_rows>0){
                         
                         //function fetches a result row as an associative array.

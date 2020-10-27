@@ -1,12 +1,15 @@
 <?php
 
+//conect to the sever
 include 'config.php';
 
+//assign variables 
 $cName = $_POST["spname"];
 $cNumber = $_POST["sppnum"];
 $cEmail = $_POST["spemail"];
 $cBookDetails = $_POST["spbdetails"];
 
+//query 
 $sql = "insert into requestbooks (ReqId ,Name, ContactNo, Email,BookReq) VALUES ('','$cName',$cNumber,'$cEmail','$cBookDetails')";
 
 

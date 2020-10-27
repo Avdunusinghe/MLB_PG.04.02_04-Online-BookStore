@@ -69,7 +69,7 @@
             <td style="width: 10%;">
                 <div class="addminPanel">
                     <ul>
-                    <li><a href="../php/Category.php">Category</a></li>
+                        <li><a href="../php/Category.php">Category</a></li>
                         <li><a href="../php/Publisher.php">Publisher</a></li>
                         <li><a href="../php/Author.php">Author</a></li>
                         <li><a href="../php/Books.php">Books</a></li>

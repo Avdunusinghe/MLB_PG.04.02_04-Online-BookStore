@@ -1,5 +1,5 @@
 <?php
-// get id through query string
+
 include 'config.php';
 // assign author table id
 $aDelete = $_GET['id']; 

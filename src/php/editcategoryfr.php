@@ -72,6 +72,7 @@
 
                     <label>Id<label> <br><br>
                     <input type="text" name="id" readonly name="id"value="<?php echo $_REQUEST['id']?>" style="width: 270px;height:30px;"> <br>
+                    
                     <lebel>Category Name</lebel> <br>
                     <input type="text" name="bookCategoryName" value="<?php echo $_REQUEST['cname']?>" style="width: 270px;height:30px;"><br><br>
         
