@@ -1,7 +1,8 @@
-
-
-
-
+ 
+<?php
+//session start enable
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,44 +13,75 @@
 
         <link rel="stylesheet" href="../Styles/style.css">
         <link rel="stylesheet" href="../Styles/admin.css">
+      
 
-        <script src="../js/admin.js"></script> 
+       
     </head>
     <body>     
       <div id="container">
         <nav>
           <div id="adsize">
-            <a href="../Home.html" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../Images/BuyBooks Logo.png" width="250" height="100"></a>
+            <a href="../Home.php" style=" float:left;position:absolute; left:60px; top:50px;"><img alt="logo" src="../Images/BuyBooks Logo.png" width="250" height="100"></a>
           </div>
         
             <div class ="adhover" style =" position:absolute; left:610px; top:100px;">
               <ul>
-                  <li><a href="../Home.html">Home</a></li>
-                  <li><a href="#">Books <span>&#9661;</span></a>
+                  <li><a href="../Home.php">Home</a></li>
+                  <li><a href="../CategoriesSubPage1.html">Books <span>&#9661;</span></a>
                   <!-- First Tier Drop Down -->
                 <ul>
-                  <li><a href="#">Information Technology</a></li>
-                  <li><a href="#">Software Engineering</a></li>
-                  <li><a href="#">Machine Learning</a></li>
-                  <li><a href="#">Enterprise Application Development</a></li>
-                  <li><a href="#">Mobile Application Design & Development</a></li>
-                  <li><a href="#">Deep Learning</a></li>
-                  <li><a href="#">Parallel Computing</a></li>
+                  <li><a href="">Information Technology</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Software Engineering</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Machine Learning</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Enterprise Application Development</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Mobile Application Design & Development</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Deep Learning</a></li>
+                  <li><a href="../src/CategoriesSubPage1.html">Parallel Computing</a></li>
                 </ul >        
                 </li>
-                  <li><a href="../magazines.html">Magazines</a></li>
-                  <li><a href="../requestbook.html">Request books</a></li>
-                  <li><a href="../Aboutus.html">About Us</a></li>
+                  
+                  <li><a href="../src/requestbook.php">Request books</a></li>
+                  <li><a href="../src/contactus.php">Contact Us</a></li>
+                  <li><a href="../src/Aboutus.php">About Us</a></li>
+                  <?php 
+                      if($_SESSION['usertype']== "Admin")
+                      {
+                        echo '<li><a href="../php/Books.php">Admin</a></li>';
+                          
+                      }
+                  ?>
+                 
               </ul>
             </div>
 
 
-              <a href="../loginpage.html"class="loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in |</a>
-              <a href="../createaccount.html"class="adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>
+
+            <?php 
+            if($_SESSION['username'])
+            {
+
+              echo '<a href="../logOut.php" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Logout</a>';
+              //get session id 
+              $id= $_SESSION['id'];
+              echo '<a class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;" href="../php/useraccount.php?id=' . urlencode($id) . '">User Profile</a>';
+
+            }
+            else
+            {
+             echo '<a href="../loginpage.html" class = "loginbtn" style = "float:right; position:relative;left: 0px;top:-90px;">Sign in |</a>';
+             echo '<a href="../createaccount.html" class= "adsignupbtn" style="float:right; position:relative;left: 160px;top:-90px;">Sign Up</a>';
+            }
+
+            ?>
+
+            
+
+
+
             
 
             <div class="cart"style = "float:right;position:relative;left:200px;top:-3px;">
-                <a href="../Home.html" class = "cart"><img src="../Images/Cart_1.png" alt="cart" width="35" height="40" style="color: white;"></a>
+                <a href="../src/cart.html" class = "cart"><img src="../Images/Cart_1.png" alt="cart" width="35" height="40" style="color: white;"></a>
                
             </div>
   
@@ -62,6 +94,9 @@
                   </div>  
           </div>
         </nav>
+         
+      </div>
+       <!-----------------------------End of header section---------------------------------->
         <?php
           
            //echo $_POST['re'];

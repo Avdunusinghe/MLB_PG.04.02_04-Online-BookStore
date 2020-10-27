@@ -1,5 +1,5 @@
 <?php
-//session start
+//session start enable
 session_start();
 ?>
 <!DOCTYPE html>
