@@ -121,7 +121,8 @@
                         }
                         }
                         else{
-                        echo"Result Not Found";
+                        //echo"Result Not Found";
+                        echo"<script> alert ('Result Not Found')</script>";
                         }
                         echo" </table>";
                         $conn->close();
